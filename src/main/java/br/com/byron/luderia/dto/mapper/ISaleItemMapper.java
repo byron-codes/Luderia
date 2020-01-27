@@ -5,9 +5,7 @@ import org.mapstruct.Mapping;
 
 import br.com.byron.luderia.dto.filter.SaleItemFilter;
 import br.com.byron.luderia.dto.request.SaleItemRequest;
-import br.com.byron.luderia.dto.request.SaleRequest;
 import br.com.byron.luderia.dto.response.SaleItemResponse;
-import br.com.byron.luderia.model.Sale;
 import br.com.byron.luderia.model.SaleItem;
 
 @Mapper(componentModel = "spring")

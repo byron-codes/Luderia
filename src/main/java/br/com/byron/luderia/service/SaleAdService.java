@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import br.com.byron.luderia.dto.filter.SaleAdFilter;
-import br.com.byron.luderia.model.Product;
 import br.com.byron.luderia.model.SaleAd;
 import br.com.byron.luderia.repository.ISaleAdRepository;
 import br.com.byron.luderia.repository.specification.SaleAdSpecification;
