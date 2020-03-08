@@ -50,7 +50,7 @@ public class SaleService extends GenericService<Sale, SaleFilter> {
 			coupon = couponService.find(coupon);
 
 			// TODO Mudar pra strategy
-			if (coupon.getUsedQuatity() < coupon.getQuatity()) {
+			if (coupon.getUsedQuatity() < coupon.getQuantity()) {
 
 				couponTotal += coupon.getValue();
 				coupon.setUsedQuatity(coupon.getUsedQuatity() + 1);

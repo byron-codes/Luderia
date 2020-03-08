@@ -19,6 +19,8 @@ public class AddressRequest extends GenericRequest {
 
 	private String complement;
 
+	private String neighborhood;
+
 	private String cep;
 	
 	private String nickname;

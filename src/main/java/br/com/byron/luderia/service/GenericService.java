@@ -23,7 +23,7 @@ public abstract class GenericService<Entity extends GenericEntity, Filter extend
 	}
 	
 	public void delete(Entity entity) {
-		find(entity);
+		entity = find(entity);
 		entity.setActive(false);
 		repository.saveAndFlush(entity);
 	}

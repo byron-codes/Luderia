@@ -1,10 +1,10 @@
 package br.com.byron.luderia.model;
 
-import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,17 +12,12 @@ import org.hibernate.annotations.Where;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
-@Table(name = "_state")
+@NoArgsConstructor
+@DiscriminatorValue("ACCESSORIES")
+@PrimaryKeyJoinColumn(name = "id_product")
+@Table(name = "_accessories")
 @Where(clause = "active=true")
-public class State extends GenericEntity {
+public class Accessories extends Product {
 
-	@Column
-	private String name;
-
-	@Column
-	private String initials;
-	
 }

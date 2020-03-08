@@ -12,7 +12,15 @@ import lombok.Setter;
 public class AddressResponse extends GenericResponse {
 
 	private Long id;
-	
-	private CityResponse city;
+
+	private String street;
+
+	private Integer number;
+
+	private String complement;
+
+	private String neighborhood;
+
+	private String cep;
 	
 }

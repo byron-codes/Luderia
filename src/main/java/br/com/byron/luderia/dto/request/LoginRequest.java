@@ -1,20 +1,20 @@
-package br.com.byron.luderia.dto.response;
+package br.com.byron.luderia.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.validation.constraints.NotBlank;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreditCardResponse extends GenericResponse {
+public class LoginRequest {
 
-	private Long id;
+    private String login;
 
-	private String name;
-
-	private String number;
+    private String password;
 
 }

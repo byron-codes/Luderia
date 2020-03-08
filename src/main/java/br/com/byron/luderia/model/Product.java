@@ -1,5 +1,7 @@
 package br.com.byron.luderia.model;
 
+import java.time.LocalDate;
+
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorColumn;
@@ -10,6 +12,7 @@ import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Where;
 
 @Getter
 @Setter
@@ -17,6 +20,7 @@ import lombok.Setter;
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "product_discriminator")
 @Table(name = "_product")
+@Where(clause = "active=true")
 public class Product extends GenericEntity {
 
 	@Basic
@@ -28,5 +32,14 @@ public class Product extends GenericEntity {
 
 	@Column
 	private String description;
+	
+	@Column
+	private Double value;
+	
+	@Column
+	private Integer quantityStock;
+	
+	@Column
+	private LocalDate updateStock;
 
 }

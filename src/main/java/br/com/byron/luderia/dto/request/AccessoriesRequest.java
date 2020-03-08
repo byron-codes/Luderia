@@ -9,20 +9,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreditCardRequest extends GenericRequest {
+public class AccessoriesRequest extends GenericRequest {
 
 	private String name;
-
-	private String number;
-
-	private String cvv;
-
-	private String flag;
-
-	private String cpf;
-
-	private String nickname;
-
-	private Boolean favorite;
+	
+	private String description;
+	
+	private Double value;
 	
 }

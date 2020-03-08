@@ -1,4 +1,4 @@
-package br.com.byron.luderia.dto.response;
+package br.com.byron.luderia.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,12 +9,8 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreditCardResponse extends GenericResponse {
+public class UserPasswordRequest {
 
-	private Long id;
-
-	private String name;
-
-	private String number;
+    private String password;
 
 }

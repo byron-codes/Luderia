@@ -15,6 +15,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Where;
 
 @Getter
 @Setter
@@ -22,6 +23,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "_user")
+@Where(clause = "active=true")
 public class User extends GenericEntity {
 
 	@Column

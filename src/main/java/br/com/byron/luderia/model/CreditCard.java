@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Where;
 
 @Getter
 @Setter
@@ -15,11 +16,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "_credit_card")
+@Where(clause = "active=true")
 public class CreditCard extends GenericEntity {
 
 	@Column
 	private String name;
-	
+
 	@Column
 	private String number;
 
@@ -31,7 +33,7 @@ public class CreditCard extends GenericEntity {
 
 	@Column
 	private String cpf;
-	
+
 	@Column
 	private String nickname;
 

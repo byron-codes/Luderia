@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Where;
 
 @Getter
 @Setter
@@ -17,6 +18,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "_coupon")
+@Where(clause = "active=true")
 public class Coupon extends GenericEntity {
 	
 	@Column
@@ -29,9 +31,15 @@ public class Coupon extends GenericEntity {
 	private LocalDate expirationDate;
 	
 	@Column
-	private Integer quatity;
+	private Integer quantity;
 	
 	@Column
 	private Integer usedQuatity;
 	
+	@Column
+	private String code;
+
+	@Column
+	private String description;
+
 }

@@ -28,6 +28,9 @@ public class Address extends GenericEntity {
 	private Integer number;
 
 	@Column
+	private String neighborhood;
+
+	@Column
 	private String complement;
 
 	@Column

@@ -20,6 +20,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.hibernate.annotations.Where;
 
 @Getter
 @Setter
@@ -28,6 +29,7 @@ import lombok.ToString;
 @Entity
 @Table(name = "_sale")
 @ToString
+@Where(clause = "active=true")
 public class Sale extends GenericEntity {
 
 	@Column

@@ -1,10 +1,17 @@
 package br.com.byron.luderia.repository;
 
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import br.com.byron.luderia.model.User;
 
+import java.util.Optional;
+
 @Repository
 public interface IUserRepository extends IGenericRepository<User> {
+
+    @Query("SELECT user FROM User user WHERE user.nickname = :nickname AND user.password = :password")
+    public Optional<User> login(@Param("nickname") String nickname, @Param("password") String password);
 
 }

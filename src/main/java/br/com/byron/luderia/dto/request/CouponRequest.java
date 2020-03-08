@@ -19,6 +19,10 @@ public class CouponRequest extends GenericRequest {
 	
 	private LocalDate expirationDate;
 	
-	private Integer quatity;
+	private Integer quantity;
+	
+	private String code;
+
+	private String description;
 	
 }
