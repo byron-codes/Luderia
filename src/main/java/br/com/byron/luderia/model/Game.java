@@ -22,6 +22,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Where;
 
 @Getter
 @Setter
@@ -31,6 +32,7 @@ import lombok.Setter;
 @DiscriminatorValue("GAME")
 @PrimaryKeyJoinColumn(name = "id_product")
 @Table(name = "_game")
+@Where(clause = "active=true")
 public class Game extends Product {
 
 	@Column
@@ -73,7 +75,7 @@ public class Game extends Product {
 	@JoinColumn(name = "company")
 	private Company company;
 
-	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "image")
 	private Image image;
 

@@ -6,6 +6,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.DesignerFilter;
+import br.com.byron.luderia.model.CreditCard;
 import br.com.byron.luderia.model.Designer;
 import lombok.RequiredArgsConstructor;
 
@@ -24,7 +25,8 @@ public class DesignerSpecification extends GenericSpecification<Designer, Design
 		if (filter == null)
 			return null;
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+		generateBasicPredicate(predicate, filter, root,
+				criteriaBuilder, new Designer());
 
 		return predicate;
 

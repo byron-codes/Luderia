@@ -3,6 +3,7 @@ package br.com.byron.luderia.dto.mapper;
 import br.com.byron.luderia.dto.filter.LoginFilter;
 import br.com.byron.luderia.dto.request.LoginRequest;
 import br.com.byron.luderia.dto.request.UserPasswordRequest;
+import br.com.byron.luderia.dto.request.UserUpdateRequest;
 import org.mapstruct.Mapper;
 
 import br.com.byron.luderia.dto.filter.UserFilter;
@@ -16,5 +17,7 @@ public interface IUserMapper extends IGenericMapper<User, UserRequest, UserRespo
 
     @Mapping(source = "login", target = "nickname")
     public LoginFilter fromLogin(LoginRequest request);
+
+    public User toUpdateEntity(UserUpdateRequest resquest, Long id);
 
 }

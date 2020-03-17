@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import org.hibernate.annotations.Where;
 import org.springframework.web.multipart.MultipartFile;
 
 import lombok.AllArgsConstructor;
@@ -18,18 +19,19 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "_image")
+@Where(clause = "active=true")
 public class Image extends GenericEntity {
 
 	@Column
 	private String path;
 
 	@Column
-	private Long size;
+	private Integer size;
 
 	@Column
 	private String type;
 
 	@Transient
-	private MultipartFile file;
+	private String file;
 
 }

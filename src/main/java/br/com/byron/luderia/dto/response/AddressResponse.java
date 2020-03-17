@@ -22,5 +22,9 @@ public class AddressResponse extends GenericResponse {
 	private String neighborhood;
 
 	private String cep;
+
+	private CityResponse city;
+
+	private StateResponse state;
 	
 }

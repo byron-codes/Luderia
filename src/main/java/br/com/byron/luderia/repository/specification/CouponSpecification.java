@@ -6,6 +6,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.CouponFilter;
+import br.com.byron.luderia.model.Author;
 import br.com.byron.luderia.model.Coupon;
 import lombok.RequiredArgsConstructor;
 
@@ -24,7 +25,8 @@ public class CouponSpecification extends GenericSpecification<Coupon, CouponFilt
 		if (filter == null)
 			return null;
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+		generateBasicPredicate(predicate, filter, root,
+				criteriaBuilder, new Coupon());
 
 		return predicate;
 

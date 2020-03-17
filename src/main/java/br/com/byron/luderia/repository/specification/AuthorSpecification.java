@@ -7,7 +7,9 @@ import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.AuthorFilter;
 import br.com.byron.luderia.model.Author;
+import br.com.byron.luderia.model.GameCategory;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @RequiredArgsConstructor
 public class AuthorSpecification extends GenericSpecification<Author, AuthorFilter> {
@@ -24,7 +26,8 @@ public class AuthorSpecification extends GenericSpecification<Author, AuthorFilt
 		if (filter == null)
 			return null;
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+		generateBasicPredicate(predicate, filter, root,
+				criteriaBuilder, new Author());
 
 		return predicate;
 

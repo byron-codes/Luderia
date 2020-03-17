@@ -6,28 +6,30 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.CreditCardFilter;
+import br.com.byron.luderia.model.Author;
 import br.com.byron.luderia.model.CreditCard;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class CreditCardSpecification extends GenericSpecification<CreditCard, CreditCardFilter> {
 
-	private static final long serialVersionUID = -5563730715436403078L;
-	
-	private final CreditCardFilter filter;
+    private static final long serialVersionUID = -5563730715436403078L;
 
-	@Override
-	public Predicate toPredicate(Root<CreditCard> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+    private final CreditCardFilter filter;
 
-		Predicate predicate = criteriaBuilder.conjunction();
+    @Override
+    public Predicate toPredicate(Root<CreditCard> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
 
-		if (filter == null)
-			return null;
+        Predicate predicate = criteriaBuilder.conjunction();
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+        if (filter == null)
+            return null;
 
-		return predicate;
+        generateBasicPredicate(predicate, filter, root,
+                criteriaBuilder, new CreditCard());
 
-	}
+        return predicate;
+
+    }
 
 }

@@ -12,22 +12,23 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class GameCategorySpecification extends GenericSpecification<GameCategory, GameCategoryFilter> {
 
-	private static final long serialVersionUID = 7488675453393793530L;
-	
-	private final GameCategoryFilter filter;
+    private static final long serialVersionUID = 7488675453393793530L;
 
-	@Override
-	public Predicate toPredicate(Root<GameCategory> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+    private final GameCategoryFilter filter;
 
-		Predicate predicate = criteriaBuilder.conjunction();
+    @Override
+    public Predicate toPredicate(Root<GameCategory> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
 
-		if (filter == null)
-			return null;
+        Predicate predicate = criteriaBuilder.conjunction();
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+        if (filter == null)
+            return null;
 
-		return predicate;
+        generateBasicPredicate(predicate, filter, root,
+                criteriaBuilder, new GameCategory());
 
-	}
+        return predicate;
+
+    }
 
 }

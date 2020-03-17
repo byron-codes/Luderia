@@ -17,4 +17,6 @@ public class CreditCardResponse extends GenericResponse {
 
 	private String number;
 
+	private String expirationDate;
+
 }

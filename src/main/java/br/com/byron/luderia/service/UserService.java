@@ -33,7 +33,11 @@ public class UserService extends GenericService<User, UserFilter> {
             }
             throw new NotFoundEntityException("Entity not found");
         }
-        return repository.findAll(new UserSpecification(filter));
+        List<User> users = repository.findAll(new UserSpecification(filter));
+        if (users.isEmpty()) {
+            throw new NotFoundEntityException("Entity not found");
+        }
+        return users;
     }
 
 }

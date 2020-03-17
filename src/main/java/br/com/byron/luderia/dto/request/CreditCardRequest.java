@@ -17,6 +17,8 @@ public class CreditCardRequest extends GenericRequest {
 
 	private String cvv;
 
+	private String expirationDate;
+
 	private String flag;
 
 	private String cpf;

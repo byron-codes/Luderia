@@ -7,4 +7,6 @@ import lombok.Setter;
 @Setter
 public class CityFilter extends GenericFilter {
 
+    private Long stateId;
+
 }

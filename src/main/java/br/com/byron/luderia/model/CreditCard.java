@@ -29,6 +29,9 @@ public class CreditCard extends GenericEntity {
 	private String cvv;
 
 	@Column
+	private String expirationDate;
+
+	@Column
 	private String flag;
 
 	@Column

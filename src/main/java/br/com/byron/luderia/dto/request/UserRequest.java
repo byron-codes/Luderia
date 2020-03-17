@@ -3,6 +3,9 @@ package br.com.byron.luderia.dto.request;
 import java.util.List;
 
 import br.com.byron.luderia.dto.validations.equalsValidation.EqualFields;
+import br.com.byron.luderia.dto.validations.unique.cpf.UniqueCpf;
+import br.com.byron.luderia.dto.validations.unique.email.UniqueEmail;
+import br.com.byron.luderia.dto.validations.unique.nickname.UniqueNickname;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,7 +22,10 @@ import javax.validation.constraints.NotBlank;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualFields(baseField = "password", matchField = "confirmPassword")
+@EqualFields(baseField = "password", matchField = "confirmPassword", message = "As senhas não são iguais")
+@UniqueCpf(message = "O CPF já está cadastrado no sistema")
+@UniqueNickname(message = "O nickname já está cadastrado no sistema")
+@UniqueEmail(message = "O email já está cadastrado no sistema")
 public class UserRequest extends GenericRequest {
 
 	@NotBlank(message = "O nome não pode ser vazio")

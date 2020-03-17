@@ -12,5 +12,7 @@ import lombok.Setter;
 public class StateResponse extends GenericResponse {
 
 	private Long id;
+
+	private String initials;
 	
 }

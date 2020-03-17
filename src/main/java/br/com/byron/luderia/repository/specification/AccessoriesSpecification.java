@@ -7,6 +7,7 @@ import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.AccessoriesFilter;
 import br.com.byron.luderia.model.Accessories;
+import br.com.byron.luderia.model.GameCategory;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
@@ -24,7 +25,8 @@ public class AccessoriesSpecification extends GenericSpecification<Accessories, 
 		if (filter == null)
 			return null;
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+		generateBasicPredicate(predicate, filter, root,
+				criteriaBuilder, new Accessories());
 
 		return predicate;
 

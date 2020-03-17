@@ -6,6 +6,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.CommentFilter;
+import br.com.byron.luderia.model.Author;
 import br.com.byron.luderia.model.Comment;
 import lombok.RequiredArgsConstructor;
 
@@ -24,7 +25,8 @@ public class CommentSpecification extends GenericSpecification<Comment, CommentF
 		if (filter == null)
 			return null;
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+		generateBasicPredicate(predicate, filter, root,
+				criteriaBuilder, new Comment());
 
 		return predicate;
 

@@ -6,6 +6,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.CompanyFilter;
+import br.com.byron.luderia.model.Author;
 import br.com.byron.luderia.model.Company;
 import lombok.RequiredArgsConstructor;
 
@@ -24,7 +25,8 @@ public class CompanySpecification extends GenericSpecification<Company, CompanyF
 		if (filter == null)
 			return null;
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+		generateBasicPredicate(predicate, filter, root,
+				criteriaBuilder, new Company());
 
 		return predicate;
 

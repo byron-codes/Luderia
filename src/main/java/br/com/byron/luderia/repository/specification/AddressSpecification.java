@@ -7,27 +7,29 @@ import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.AddressFilter;
 import br.com.byron.luderia.model.Address;
+import br.com.byron.luderia.model.GameCategory;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class AddressSpecification extends GenericSpecification<Address, AddressFilter> {
 
-	private static final long serialVersionUID = -3798921289834329268L;
-	
-	private final AddressFilter filter;
+    private static final long serialVersionUID = -3798921289834329268L;
 
-	@Override
-	public Predicate toPredicate(Root<Address> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+    private final AddressFilter filter;
 
-		Predicate predicate = criteriaBuilder.conjunction();
+    @Override
+    public Predicate toPredicate(Root<Address> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
 
-		if (filter == null)
-			return null;
+        Predicate predicate = criteriaBuilder.conjunction();
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+        if (filter == null)
+            return null;
 
-		return predicate;
+        generateBasicPredicate(predicate, filter, root,
+                criteriaBuilder, new Address());
 
-	}
+        return predicate;
+
+    }
 
 }

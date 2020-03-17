@@ -6,6 +6,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
 import br.com.byron.luderia.dto.filter.AwardFilter;
+import br.com.byron.luderia.model.Author;
 import br.com.byron.luderia.model.Award;
 import lombok.RequiredArgsConstructor;
 
@@ -24,7 +25,8 @@ public class AwardSpecification extends GenericSpecification<Award, AwardFilter>
 		if (filter == null)
 			return null;
 
-		generateBasicPredicate(predicate, filter, root, criteriaBuilder);
+		generateBasicPredicate(predicate, filter, root,
+				criteriaBuilder, new Award());
 
 		return predicate;
 

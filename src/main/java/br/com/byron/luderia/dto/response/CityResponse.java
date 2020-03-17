@@ -12,7 +12,7 @@ import lombok.Setter;
 public class CityResponse extends GenericResponse {
 
 	private Long id;
-	
-	private StateResponse state;
-	
+
+	private String name;
+
 }

@@ -13,6 +13,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ImageRequest extends GenericRequest {
 
-	private MultipartFile file;
+	private String file;
 	
 }

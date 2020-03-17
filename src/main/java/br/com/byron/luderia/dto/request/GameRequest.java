@@ -3,6 +3,8 @@ package br.com.byron.luderia.dto.request;
 import java.time.LocalDate;
 import java.util.List;
 
+import org.hibernate.validator.constraints.Length;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
 import br.com.byron.luderia.model.GameLevel;
@@ -14,30 +16,55 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Positive;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class GameRequest extends GenericRequest {
 
+	@NotBlank(message = "O nome não pode ser vazio")
+	@Length(min = 5, max = 150, message = "O tamanho do nome deve estar entre 5 e 150 caracteres")
 	private String name;
 
+	@NotBlank(message = "O nome original não pode ser vazio")
+	@Length(min = 5, max = 150, message = "O tamanho do nome original deve estar entre 5 e 150 caracteres")
 	private String originalName;
 
+	@NotBlank(message = "A descrição não pode ser vazia")
+	@Length(min = 5, max = 150, message = "O tamanho da descrição deve estar entre 5 e 150 caracteres")
 	private String description;
 
 	private String components;
 
+	@NotNull(message = "A data de lançamento é obrigatória")
+	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+	@Past(message = "A data deve ser anterior a data atual")
 	private LocalDate releaseDate;
 
+	@NotNull(message = "O número minímo de jogadores não pode ser vazio")
+	@Positive(message = "O número minímo de jogadores deve ser posivito")
 	private Integer minPlayers;
 
+	@NotNull(message = "O número máximo de jogadores não pode ser vazio")
+	@Positive(message = "O número máximo de jogadores deve ser posivito")
 	private Integer maxPlayers;
 
+	@NotNull(message = "O número minímo de minutos não pode ser vazio")
+	@Positive(message = "O número minímo de minutos deve ser posivito")
 	private Integer minMinutes;
 
+	@NotNull(message = "O número máximo de minutos não pode ser vazio")
+	@Positive(message = "O número máximo de minutos deve ser posivito")
 	private Integer maxMinutes;
 
+	@NotNull(message = "O idade miníma não pode ser vazia")
+	@Positive(message = "O idade miníma deve ser posivita")
 	private Integer minAge;
 
 	private Boolean national;
@@ -46,17 +73,27 @@ public class GameRequest extends GenericRequest {
 
 	private Long companyId;
 
-	private MultipartFile image;
+	private String image;
 
 	private Long systemId;
 
+	@NotNull(message = "A dependência de linguagem não pode ser vazia")
 	private LanguageDependence languageDependence;
 
+	@NotNull(message = "O estilo de jogo não pode ser vazio")
 	private GameStyle style;
 
+	@NotNull(message = "O tipo de jogo não pode ser vazio")
 	private GameType type;
 
+	@NotNull(message = "A dificuldade do jogo não pode ser vazia")
 	private GameLevel level;
+
+	@NotNull(message = "O valor do jogo não pode ser vazio")
+	@Positive(message = "O valor do jogo deve ser positivo")
+	private Double value;
+
+	private Integer quantityStock = 0;
 
 	private List<Long> awards;
 
