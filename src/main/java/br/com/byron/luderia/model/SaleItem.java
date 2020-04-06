@@ -27,8 +27,8 @@ public class SaleItem extends GenericEntity {
 	@Column
 	private Integer quantity;
 	
-	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-	@JoinColumn(name = "ad")
-	private SaleAd ad;
+	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
+	@JoinColumn(name = "product")
+	private Product product;
 	
 }

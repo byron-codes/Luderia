@@ -36,7 +36,7 @@ public class Sale extends GenericEntity {
 	private Double total;
 	
 	@Column
-	private Double sendValue;
+	private Double freight;
 	
 	@Column
 	private LocalDateTime date;
@@ -48,11 +48,20 @@ public class Sale extends GenericEntity {
 	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	@JoinColumn(name = "buyer")
 	private User buyer;
+
+	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+	@JoinColumn(name = "address")
+	private Address address;
+
+	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+	@JoinColumn(name = "credit_card")
+	private CreditCard creditCard;
 	
-	@OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-	private List<Coupon> coupons = new ArrayList<Coupon>();
+	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
+	@JoinColumn(name = "coupon")
+	private Coupon coupon;
 	
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private List<SaleItem> items = new ArrayList<SaleItem>();
+	@OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+	private List<SaleItem> items = new ArrayList<>();
 	
 }

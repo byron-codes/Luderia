@@ -10,7 +10,7 @@ import br.com.byron.luderia.model.GenericEntity;
 public interface IGenericMapper<Entity extends GenericEntity, Request extends GenericRequest, Response extends GenericResponse, Filter extends GenericFilter> {
 
 	public Entity toEntity(Request request);
-	
+
 	public Entity toEntity(Long id);
 	
 	public List<Entity> toEntity(List<Long> id);

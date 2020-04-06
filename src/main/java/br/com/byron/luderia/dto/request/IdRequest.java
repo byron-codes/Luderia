@@ -9,9 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class SaleItemRequest extends GenericRequest {
-
-	private Integer quantity;
+public class IdRequest extends GenericRequest {
 
 	private Long id;
 	

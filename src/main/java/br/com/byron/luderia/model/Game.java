@@ -75,10 +75,6 @@ public class Game extends Product {
 	@JoinColumn(name = "company")
 	private Company company;
 
-	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name = "image")
-	private Image image;
-
 	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	@JoinColumn(name = "game_system")
 	private GameSystem system;

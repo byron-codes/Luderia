@@ -15,10 +15,16 @@ import lombok.Setter;
 public class SaleRequest extends GenericRequest {
 
 	private LocalDateTime date;
+
+	private Double freight;
 	
-	private Long userId;
+	private IdRequest user;
+
+	private IdRequest address;
+
+	private IdRequest creditCard;
 	
-	private List<Long> coupons;
+	private IdRequest coupon;
 	
 	private List<SaleItemRequest> items;
 	

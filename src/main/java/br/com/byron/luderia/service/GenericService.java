@@ -28,8 +28,8 @@ public abstract class GenericService<Entity extends GenericEntity, Filter extend
 		repository.saveAndFlush(entity);
 	}
 	
-	public Entity find(Entity request) {
-		return repository.findById(request.getId()).orElseThrow(() -> new NotFoundEntityException("Entity nor found"));
+	public Entity find(Entity entity) {
+		return repository.findById(entity.getId()).orElseThrow(() -> new NotFoundEntityException("Entity nor found"));
 	}
 
 }

@@ -2,13 +2,7 @@ package br.com.byron.luderia.model;
 
 import java.time.LocalDate;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -41,5 +35,9 @@ public class Product extends GenericEntity {
 	
 	@Column
 	private LocalDate updateStock;
+
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn(name = "image")
+	private Image image;
 
 }

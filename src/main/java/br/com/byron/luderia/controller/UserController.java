@@ -131,8 +131,8 @@ public class UserController {
         return ResponseEntity.ok().body(mapper.toResponse(facade.update(user)));
     }
 
-    @GetMapping("/login")
-    public ResponseEntity<UserResponse> login(@Valid LoginRequest request) {
+    @PostMapping("/login")
+    public ResponseEntity<UserResponse> login(@Valid @RequestBody LoginRequest request) {
         return ResponseEntity.ok().body(mapper.toResponse(facade.find(mapper.fromLogin(request))).get(0));
     }
 

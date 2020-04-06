@@ -1,99 +1,120 @@
 package br.com.byron.luderia.service;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
+import br.com.byron.luderia.model.*;
+import br.com.byron.luderia.repository.IAddressRepository;
 import org.springframework.stereotype.Service;
 
 import br.com.byron.luderia.dto.filter.SaleFilter;
 import br.com.byron.luderia.exception.NotFoundEntityException;
-import br.com.byron.luderia.model.Coupon;
-import br.com.byron.luderia.model.Sale;
-import br.com.byron.luderia.model.SaleAd;
-import br.com.byron.luderia.model.SaleItem;
-import br.com.byron.luderia.model.SaleStatus;
 import br.com.byron.luderia.repository.ISaleRepository;
 import br.com.byron.luderia.repository.specification.SaleSpecification;
 
 @Service
 public class SaleService extends GenericService<Sale, SaleFilter> {
 
-	private ISaleRepository repository;
+    private ISaleRepository repository;
 
-	private SaleAdService adService;
+    private ProductService productService;
 
-	private CouponService couponService;
+    private CouponService couponService;
 
-	SaleService(ISaleRepository repository, SaleAdService adService, CouponService couponService) {
-		super(repository);
-		this.repository = repository;
-		this.adService = adService;
-		this.couponService = couponService;
-	}
+    private SaleItemService saleItemService;
 
-	@Override
-	public List<Sale> find(SaleFilter filter) {
-		List<Sale> entities = repository.findAll(new SaleSpecification(filter));
-		if (entities.isEmpty()) {
-			throw new NotFoundEntityException("Entity not found");
-		}
-		return entities;
-	}
+    private FreightService freightService;
 
-	@Override
-	public Sale add(Sale sale) {
-		
-		Double total = 0.0;
-		Double couponTotal = 0.0;
+    private IAddressRepository addressRepository;
 
-		for (Coupon coupon : sale.getCoupons()) {
+    SaleService(ISaleRepository repository, ProductService productService, CouponService couponService, SaleItemService saleItemService, FreightService freightService, IAddressRepository addressRepository) {
+        super(repository);
+        this.repository = repository;
+        this.productService = productService;
+        this.couponService = couponService;
+        this.saleItemService = saleItemService;
+        this.freightService = freightService;
+        this.addressRepository = addressRepository;
+    }
 
-			coupon = couponService.find(coupon);
+    @Override
+    public List<Sale> find(SaleFilter filter) {
+        List<Sale> entities = repository.findAll(new SaleSpecification(filter));
+        if (entities.isEmpty()) {
+            throw new NotFoundEntityException("Entity not found");
+        }
+        return entities;
+    }
 
-			// TODO Mudar pra strategy
-			if (coupon.getUsedQuatity() < coupon.getQuantity()) {
+    @Override
+    public Sale add(Sale sale) {
 
-				couponTotal += coupon.getValue();
-				coupon.setUsedQuatity(coupon.getUsedQuatity() + 1);
-				couponService.update(coupon);
+        sale.setAddress(addressRepository.findById(sale.getAddress().getId()).orElseThrow(() -> new RuntimeException()));
+        sale.setFreight(freightService.calculate(sale.getAddress().getCep()).getFreight());
 
-			} else {
-				// TODO Throw error
-			}
+        Double total = 0.0;
+        Double couponTotal = 0.0;
 
-		}
 
-		for (SaleItem item : sale.getItems()) {
+        if (sale.getCoupon() != null && sale.getCoupon().getId() != null) {
+            Coupon coupon = couponService.find(sale.getCoupon());
+            // TODO Mudar pra strategy
+            if (coupon.getUsedQuatity() < coupon.getQuantity()) {
 
-			SaleAd ad = adService.find(item.getAd());
+                couponTotal += coupon.getValue();
+                coupon.setUsedQuatity(coupon.getUsedQuatity() + 1);
+                couponService.update(coupon);
 
-			// TODO Mudar pra strategy
-			if (ad.getQuantity() >= item.getQuantity()) {
+            } else {
+                // TODO Throw error
+            }
+        } else {
+            sale.setCoupon(null);
+        }
 
-				ad.setQuantity(ad.getQuantity() - item.getQuantity());
-				total += ad.getValue() * item.getQuantity();
-				adService.update(ad);
 
-				sale.setSaleStatus(SaleStatus.PROCESSING);
+        for (SaleItem item : sale.getItems()) {
 
-				if (couponTotal > total) {
-					total = 0.0;
-				} else {
-					total -= couponTotal;
-				}
+            Product product = productService.find(item.getProduct());
 
-				sale.setTotal(total);
+            // TODO Mudar pra strategy
+            if (product.getQuantityStock() >= item.getQuantity()) {
 
-			} else {
-				// TODO Throw error
-			}
+                product.setQuantityStock(product.getQuantityStock() - item.getQuantity());
+                total += product.getValue() * item.getQuantity();
+                productService.update(product);
 
-		}
+                sale.setSaleStatus(SaleStatus.PROCESSING);
 
-		// TODO processar frete
-		// TODO Processar pagamento
-		
-		return super.add(sale);
+                if (couponTotal > total) {
+                    total = 0.0;
+                } else {
+                    total -= couponTotal;
+                }
 
-	}
+                total += sale.getFreight();
+
+                sale.setTotal(total);
+
+            } else {
+                // TODO Throw error
+            }
+
+        }
+
+        sale.setDate(LocalDateTime.now());
+
+        List<SaleItem> saleItems = new ArrayList<>();
+        for (SaleItem saleItem : sale.getItems()) {
+            saleItems.add(saleItemService.add(saleItem));
+        }
+        sale.setItems(saleItems);
+
+        // TODO Processar pagamento
+
+        return super.add(sale);
+
+    }
 
 }

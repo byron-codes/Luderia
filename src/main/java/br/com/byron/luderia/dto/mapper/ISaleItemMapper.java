@@ -11,10 +11,10 @@ import br.com.byron.luderia.model.SaleItem;
 @Mapper(componentModel = "spring")
 public interface ISaleItemMapper extends IGenericMapper<SaleItem, SaleItemRequest, SaleItemResponse, SaleItemFilter>{
 
-	@Mapping(source = "adId", target = "ad.id")
+	@Mapping(source = "id", target = "product.id")
 	public SaleItem toEntity(SaleItemRequest request);
 
-	@Mapping(source = "resquest.adId", target = "ad.id")
+	@Mapping(source = "resquest.id", target = "product.id")
 	public SaleItem toUpdateEntity(SaleItemRequest resquest, Long id);
 	
 }

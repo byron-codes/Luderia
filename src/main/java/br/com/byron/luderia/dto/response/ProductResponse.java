@@ -12,5 +12,13 @@ import lombok.Setter;
 public class ProductResponse extends GenericResponse {
 
 	private Long id;
+
+	private Double value;
+
+	private String name;
+
+	private String description;
+
+	private Integer quantityStock;
 	
 }

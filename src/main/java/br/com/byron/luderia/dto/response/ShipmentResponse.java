@@ -1,4 +1,4 @@
-package br.com.byron.luderia.dto.request;
+package br.com.byron.luderia.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,10 +9,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class SaleItemRequest extends GenericRequest {
+public class ShipmentResponse {
 
-	private Integer quantity;
+    private Double freight;
 
-	private Long id;
-	
+    private Integer days;
+
 }
