@@ -43,4 +43,11 @@ public class CouponController extends GenericController<Coupon, CouponFilter, Co
 		return ResponseEntity.ok().body(mapper.toResponse(facade.find(mapper.toCodeFilter(code))).get(0));
 	}
 
+	@PutMapping("/{id}/quantity")
+	public ResponseEntity<CouponResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) {
+		Coupon coupon = facade.find(mapper.toFilter(id)).get(0);
+		coupon.setQuantity(coupon.getQuantity() + quantity);
+		return ResponseEntity.ok().body(mapper.toResponse(facade.update(coupon)));
+	}
+
 }

@@ -5,8 +5,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class AccessoriesResponse extends GenericResponse {
-
-	private Long id;
+public class AccessoriesResponse extends ProductResponse {
 	
 }

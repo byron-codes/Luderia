@@ -5,18 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class AccessoriesRequest extends GenericRequest {
+public class SaleChangeRequest extends GenericRequest {
 
-	private String name;
+	private IdRequest sale;
 	
-	private String description;
-	
-	private Double value;
-
-	private String image;
+	private List<SaleChangeItemRequest> items;
 	
 }

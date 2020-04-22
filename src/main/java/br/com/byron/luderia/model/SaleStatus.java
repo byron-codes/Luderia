@@ -5,6 +5,7 @@ public enum SaleStatus {
 	PROCESSING,
 	SHIPMENT,
 	FINISHED,
-	EXCHANGE;
+	EXCHANGE,
+	EXCHANGEFINISHED;
 	
 }

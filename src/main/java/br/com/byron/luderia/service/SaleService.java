@@ -6,6 +6,7 @@ import java.util.List;
 
 import br.com.byron.luderia.model.*;
 import br.com.byron.luderia.repository.IAddressRepository;
+import br.com.byron.luderia.repository.IUserRepository;
 import org.springframework.stereotype.Service;
 
 import br.com.byron.luderia.dto.filter.SaleFilter;
@@ -26,15 +27,21 @@ public class SaleService extends GenericService<Sale, SaleFilter> {
 
     private FreightService freightService;
 
+    private IUserRepository userRepository;
+
     private IAddressRepository addressRepository;
 
-    SaleService(ISaleRepository repository, ProductService productService, CouponService couponService, SaleItemService saleItemService, FreightService freightService, IAddressRepository addressRepository) {
+    SaleService(ISaleRepository repository, ProductService productService,
+                CouponService couponService, SaleItemService saleItemService,
+                FreightService freightService, IAddressRepository addressRepository,
+                IUserRepository userRepository) {
         super(repository);
         this.repository = repository;
         this.productService = productService;
         this.couponService = couponService;
         this.saleItemService = saleItemService;
         this.freightService = freightService;
+        this.userRepository = userRepository;
         this.addressRepository = addressRepository;
     }
 
@@ -52,6 +59,7 @@ public class SaleService extends GenericService<Sale, SaleFilter> {
 
         sale.setAddress(addressRepository.findById(sale.getAddress().getId()).orElseThrow(() -> new RuntimeException()));
         sale.setFreight(freightService.calculate(sale.getAddress().getCep()).getFreight());
+        sale.setBuyer(userRepository.findById(sale.getBuyer().getId()).orElseThrow(() -> new RuntimeException()));
 
         Double total = 0.0;
         Double couponTotal = 0.0;
@@ -93,17 +101,26 @@ public class SaleService extends GenericService<Sale, SaleFilter> {
                     total -= couponTotal;
                 }
 
+                if (sale.getBuyer().getBalance() >= total) {
+                    sale.getBuyer().setBalance(sale.getBuyer().getBalance() - total);
+                    total = 0.0;
+                } else {
+                    sale.getBuyer().setBalance(0.0);
+                    total -= sale.getBuyer().getBalance();
+                }
+
                 total += sale.getFreight();
 
                 sale.setTotal(total);
+
+                sale.getBuyer().setSalesValue(sale.getBuyer().getSalesValue() + total);
+                userRepository.save(sale.getBuyer());
 
             } else {
                 // TODO Throw error
             }
 
         }
-
-        sale.setDate(LocalDateTime.now());
 
         List<SaleItem> saleItems = new ArrayList<>();
         for (SaleItem saleItem : sale.getItems()) {

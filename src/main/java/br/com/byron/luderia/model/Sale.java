@@ -4,16 +4,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -39,9 +30,6 @@ public class Sale extends GenericEntity {
 	private Double freight;
 	
 	@Column
-	private LocalDateTime date;
-	
-	@Column
 	@Enumerated(EnumType.STRING)
 	private SaleStatus saleStatus;
 	
@@ -61,7 +49,7 @@ public class Sale extends GenericEntity {
 	@JoinColumn(name = "coupon")
 	private Coupon coupon;
 	
-	@OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+	@OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
 	private List<SaleItem> items = new ArrayList<>();
 	
 }

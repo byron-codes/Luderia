@@ -54,14 +54,14 @@ public class SaleController extends GenericController<Sale, SaleFilter, SaleRequ
     @Override
     public ResponseEntity<List<SaleResponse>> findAll(SaleFilter filter) {
         List<SaleResponse> sales = super.findAll(filter).getBody();
-        sales.stream().forEach(sale -> sale.setCanChange(LocalDateTime.now().isBefore(sale.getDate().plusDays(15)) && sale.getSaleStatus() == SaleStatus.FINISHED));
+        sales.stream().forEach(sale -> sale.setCanChange(LocalDateTime.now().isBefore(sale.getCreationDate().plusDays(15)) && sale.getSaleStatus() == SaleStatus.FINISHED));
         return ResponseEntity.ok(sales);
     }
 
 	@Override
 	public ResponseEntity<SaleResponse> findById(@PathVariable("id") Long id) {
 		SaleResponse sale = super.findById(id).getBody();
-		sale.setCanChange(LocalDateTime.now().isBefore(sale.getDate().plusDays(15)) && sale.getSaleStatus() == SaleStatus.FINISHED);
+		sale.setCanChange(LocalDateTime.now().isBefore(sale.getCreationDate().plusDays(15)) && sale.getSaleStatus() == SaleStatus.FINISHED);
 		return ResponseEntity.ok(sale);
 	}
 

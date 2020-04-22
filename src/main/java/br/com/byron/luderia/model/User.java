@@ -54,6 +54,12 @@ public class User extends GenericEntity {
 	private String expirationAccessToken;
 
 	@Column
+	private Double balance = 0.0;
+
+	@Column
+	private Double salesValue = 0.0;
+
+	@Column
 	@Enumerated(EnumType.STRING)
 	private UserType userType = UserType.COMMON;
 	

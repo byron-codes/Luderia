@@ -52,7 +52,7 @@ public class ProductController extends GenericController<Product, ProductFilter,
 
         Product product = this.facade.find(mapper.toFilter(gameId)).get(0);
 
-        if (product.getImage() != null) {
+        if (product.getImage().getPath() != null) {
             HttpHeaders headers = new HttpHeaders();
             headers.setCacheControl(CacheControl.noCache().getHeaderValue());
             headers.setContentType(MediaType.parseMediaType(product.getImage().getType()));

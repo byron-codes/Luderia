@@ -5,16 +5,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ShipmentResponse {
+public class SalesItemChart {
 
-    private Double freight;
+    private LineChartItem games;
 
-    private Integer days;
+    private LineChartItem expansions;
 
-    private Boolean error = false;
+    private LineChartItem accessories;
 
 }

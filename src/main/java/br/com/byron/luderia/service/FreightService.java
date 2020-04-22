@@ -10,16 +10,21 @@ import org.springframework.stereotype.Service;
 public class FreightService {
 
     public ShipmentResponse calculate(String destination) {
+
         CorreiosPrecoPrazo correiosPrecoPrazo = null;
+        ShipmentResponse shipmentResponse = new ShipmentResponse();
+
         try {
             correiosPrecoPrazo = new ConsultaCorreios().calcularPrecoPrazo("01451001", destination)[0];
+            shipmentResponse.setFreight(correiosPrecoPrazo.getPrecoFrete());
+            shipmentResponse.setDays(correiosPrecoPrazo.getPrazoEntrega());
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
+            shipmentResponse.setFreight(22.5);
+            shipmentResponse.setDays(4);
+            shipmentResponse.setError(true);
         }
 
-        ShipmentResponse shipmentResponse = new ShipmentResponse();
-        shipmentResponse.setFreight(correiosPrecoPrazo.getPrecoFrete());
-        shipmentResponse.setDays(correiosPrecoPrazo.getPrazoEntrega());
         return shipmentResponse;
     }
 

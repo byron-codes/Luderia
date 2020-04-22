@@ -25,7 +25,7 @@ public class SaleResponse extends GenericResponse {
 	
 	private List<SaleItemResponse> items;
 
-	private LocalDateTime date;
+	private LocalDateTime creationDate;
 
 	private SaleStatus saleStatus;
 

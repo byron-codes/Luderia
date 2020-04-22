@@ -49,30 +49,4 @@ public class GameController extends GenericController<Game, GameFilter, GameRequ
         return ResponseEntity.ok().body(mapper.toResponse(facade.update(game)));
     }
 
-    @GetMapping(path = "/{id}/imagem/")
-    public ResponseEntity<byte[]> image(@PathVariable("id") Long gameId,
-                                        @RequestParam(name = "largura", required = false, defaultValue = "1024") Integer largura,
-                                        @RequestParam(name = "altura", required = false, defaultValue = "768") Integer altura) throws IOException {
-
-        Game game = this.facade.find(mapper.toFilter(gameId)).get(0);
-
-        if (game.getImage() != null) {
-            HttpHeaders headers = new HttpHeaders();
-            headers.setCacheControl(CacheControl.noCache().getHeaderValue());
-            headers.setContentType(MediaType.parseMediaType(game.getImage().getType()));
-            headers.setContentLength(game.getImage().getSize());
-            ResponseEntity<byte[]> responseEntity = new ResponseEntity<>(Files.readAllBytes(Paths.get("c:/images/" + game.getImage().getId() + "." + game.getImage().getType().split("/")[1])), headers,
-                    HttpStatus.OK);
-            return responseEntity;
-        } else {
-            HttpHeaders headers = new HttpHeaders();
-            headers.setCacheControl(CacheControl.noCache().getHeaderValue());
-            headers.setContentType(MediaType.parseMediaType("image/png"));
-            headers.setContentLength(4778);
-            ResponseEntity<byte[]> responseEntity = new ResponseEntity<>(Files.readAllBytes(Paths.get("c:/images/notfound.png")), headers,
-                    HttpStatus.OK);
-            return responseEntity;
-        }
-
-    }
 }

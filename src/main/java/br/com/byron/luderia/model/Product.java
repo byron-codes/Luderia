@@ -31,7 +31,7 @@ public class Product extends GenericEntity {
 	private Double value;
 	
 	@Column
-	private Integer quantityStock;
+	private Integer quantityStock = 0;
 	
 	@Column
 	private LocalDate updateStock;

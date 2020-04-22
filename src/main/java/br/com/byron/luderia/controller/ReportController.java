@@ -1,0 +1,37 @@
+package br.com.byron.luderia.controller;
+
+import br.com.byron.luderia.dto.response.GameResponse;
+import br.com.byron.luderia.dto.response.LineChartItem;
+import br.com.byron.luderia.service.ReportService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequiredArgsConstructor
+@CrossOrigin
+@RequestMapping("/report")
+@Api(value = "Report")
+@ApiResponses({@ApiResponse(code = 201, message = "Created", response = GameResponse.class),
+        @ApiResponse(code = 500, message = "Internal server error"),
+        @ApiResponse(code = 400, message = "Bad request")})
+public class ReportController {
+
+    private final ReportService reportService;
+
+    @GetMapping("/item-type")
+    public ResponseEntity<List<LineChartItem>> salesYear(@RequestParam("year") Integer year) {
+        return ResponseEntity.ok(reportService.getSalesYear(year));
+    }
+
+    @GetMapping("/sale-change")
+    public ResponseEntity<List<LineChartItem>> salesAndChanges(@RequestParam("year") Integer year) {
+        return ResponseEntity.ok(reportService.getSalesAndChanges(year));
+    }
+
+}
