@@ -1,12 +1,8 @@
 package br.com.byron.luderia.dto.mapper;
 
-import br.com.byron.luderia.dto.filter.SaleChangeFilter;
 import br.com.byron.luderia.dto.filter.SaleChangeItemFilter;
 import br.com.byron.luderia.dto.request.SaleChangeItemRequest;
-import br.com.byron.luderia.dto.request.SaleChangeRequest;
 import br.com.byron.luderia.dto.response.SaleChangeItemResponse;
-import br.com.byron.luderia.dto.response.SaleChangeResponse;
-import br.com.byron.luderia.model.SaleChange;
 import br.com.byron.luderia.model.SaleChangeItem;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

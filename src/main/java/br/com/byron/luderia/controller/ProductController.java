@@ -1,18 +1,14 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.GameFilter;
 import br.com.byron.luderia.dto.filter.ProductFilter;
-import br.com.byron.luderia.dto.mapper.IGameMapper;
 import br.com.byron.luderia.dto.mapper.IProductMapper;
-import br.com.byron.luderia.dto.request.GameRequest;
 import br.com.byron.luderia.dto.request.ProductRequest;
 import br.com.byron.luderia.dto.response.GameResponse;
 import br.com.byron.luderia.dto.response.ProductResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Game;
 import br.com.byron.luderia.model.Product;
-import br.com.byron.luderia.service.GameService;
-import br.com.byron.luderia.service.ProductService;
+import br.com.byron.luderia.repository.IProductRepository;
+import br.com.byron.luderia.repository.specification.ProductSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
@@ -24,7 +20,6 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.time.LocalDate;
 
 @RestController
 @RequestMapping("/product")
@@ -38,19 +33,23 @@ public class ProductController extends GenericController<Product, ProductFilter,
 
     private final IProductMapper mapper;
 
+    private final ProductSpecification specification;
+
     @Autowired
-    public ProductController(ProductService service, ExecuteStrategy<Product> strategy, IProductMapper mapper) {
-        super(new Facade<Product, ProductFilter>(service, strategy), mapper);
-        facade = new Facade<Product, ProductFilter>(service, strategy);
+    public ProductController(ExecuteStrategy<Product> strategy, IProductMapper mapper, IProductRepository repository) {
+        super(new Facade<Product, ProductFilter>(strategy, repository), mapper, new ProductSpecification());
+        facade = new Facade<Product, ProductFilter>(strategy, repository);
         this.mapper = mapper;
+        this.specification = new ProductSpecification();
     }
 
     @GetMapping(path = "/{id}/image")
-    public ResponseEntity<byte[]> image(@PathVariable("id") Long gameId,
+    public ResponseEntity<byte[]> image(@PathVariable("id") Long id,
                                         @RequestParam(name = "largura", required = false, defaultValue = "1024") Integer largura,
                                         @RequestParam(name = "altura", required = false, defaultValue = "768") Integer altura) throws IOException {
 
-        Product product = this.facade.find(mapper.toFilter(gameId)).get(0);
+        specification.setFilter(mapper.toFilter(id));
+        Product product = this.facade.find(specification).get(0);
 
         if (product.getImage().getPath() != null) {
             HttpHeaders headers = new HttpHeaders();

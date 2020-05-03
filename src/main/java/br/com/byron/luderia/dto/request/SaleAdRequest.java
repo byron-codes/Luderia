@@ -1,12 +1,12 @@
 package br.com.byron.luderia.dto.request;
 
-import java.time.LocalDate;
-
 import br.com.byron.luderia.model.ProductState;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.time.LocalDate;
 
 @Getter
 @Setter

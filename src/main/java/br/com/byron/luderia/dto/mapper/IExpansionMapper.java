@@ -1,13 +1,9 @@
 package br.com.byron.luderia.dto.mapper;
 
 import br.com.byron.luderia.dto.filter.ExpansionFilter;
-import br.com.byron.luderia.dto.filter.GameFilter;
 import br.com.byron.luderia.dto.request.ExpansionRequest;
-import br.com.byron.luderia.dto.request.GameRequest;
 import br.com.byron.luderia.dto.response.ExpansionResponse;
-import br.com.byron.luderia.dto.response.GameResponse;
 import br.com.byron.luderia.model.Expansion;
-import br.com.byron.luderia.model.Game;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

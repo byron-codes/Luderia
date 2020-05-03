@@ -1,20 +1,20 @@
 package br.com.byron.luderia.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import br.com.byron.luderia.dto.filter.SaleAdFilter;
 import br.com.byron.luderia.dto.mapper.ISaleAdMapper;
 import br.com.byron.luderia.dto.request.SaleAdRequest;
 import br.com.byron.luderia.dto.response.SaleAdResponse;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.model.SaleAd;
-import br.com.byron.luderia.service.SaleAdService;
+import br.com.byron.luderia.repository.ISaleAdRepository;
+import br.com.byron.luderia.repository.specification.SaleAdSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/sale-ad")
@@ -25,8 +25,8 @@ import io.swagger.annotations.ApiResponses;
 public class SaleAdController extends GenericController<SaleAd, SaleAdFilter, SaleAdRequest, SaleAdResponse> {
 
 	@Autowired
-	public SaleAdController(SaleAdService service, ExecuteStrategy<SaleAd> strategy, ISaleAdMapper mapper) {
-		super(new Facade<SaleAd, SaleAdFilter>(service, strategy), mapper);
+	public SaleAdController(ExecuteStrategy<SaleAd> strategy, ISaleAdMapper mapper, ISaleAdRepository repository) {
+		super(new Facade<SaleAd, SaleAdFilter>(strategy, repository), mapper, new SaleAdSpecification());
 	}
 	
 }

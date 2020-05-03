@@ -1,6 +1,5 @@
 package br.com.byron.luderia.repository;
 
-import br.com.byron.luderia.model.Sale;
 import br.com.byron.luderia.model.SaleChange;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

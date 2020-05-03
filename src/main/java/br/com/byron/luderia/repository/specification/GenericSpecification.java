@@ -1,18 +1,22 @@
 package br.com.byron.luderia.repository.specification;
 
-import java.lang.reflect.Field;
+import br.com.byron.luderia.dto.filter.GenericFilter;
+import br.com.byron.luderia.model.GenericEntity;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.jpa.domain.Specification;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import java.lang.reflect.Field;
 
-import org.springframework.data.jpa.domain.Specification;
-
-import br.com.byron.luderia.dto.filter.GenericFilter;
-import br.com.byron.luderia.model.GenericEntity;
-
+@Setter
+@Getter
 public abstract class GenericSpecification<Entity extends GenericEntity, Filter extends GenericFilter> implements Specification<Entity> {
+
+    private Filter filter;
 
     protected void add(Predicate predicate, Expression<Boolean> expression) {
         predicate.getExpressions().add(expression);

@@ -1,16 +1,15 @@
 package br.com.byron.luderia.dto.mapper;
 
-import br.com.byron.luderia.model.SaleStatus;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-
 import br.com.byron.luderia.dto.filter.SaleFilter;
 import br.com.byron.luderia.dto.request.SaleRequest;
 import br.com.byron.luderia.dto.response.SaleResponse;
 import br.com.byron.luderia.model.Sale;
+import br.com.byron.luderia.model.SaleStatus;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
-@Mapper(componentModel = "spring", uses = {ICouponMapper.class, ISaleItemMapper.class})
+@Mapper(componentModel = "spring", uses = {ICouponMapper.class, ISaleItemMapper.class, ICreditCardMapper.class})
 public interface ISaleMapper extends IGenericMapper<Sale, SaleRequest, SaleResponse, SaleFilter> {
 
     @Mappings({

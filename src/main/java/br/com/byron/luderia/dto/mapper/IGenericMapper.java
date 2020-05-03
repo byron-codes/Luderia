@@ -1,11 +1,11 @@
 package br.com.byron.luderia.dto.mapper;
 
-import java.util.List;
-
 import br.com.byron.luderia.dto.filter.GenericFilter;
 import br.com.byron.luderia.dto.request.GenericRequest;
 import br.com.byron.luderia.dto.response.GenericResponse;
 import br.com.byron.luderia.model.GenericEntity;
+
+import java.util.List;
 
 public interface IGenericMapper<Entity extends GenericEntity, Request extends GenericRequest, Response extends GenericResponse, Filter extends GenericFilter> {
 

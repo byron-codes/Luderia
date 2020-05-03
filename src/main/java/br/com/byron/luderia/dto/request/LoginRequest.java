@@ -1,19 +1,18 @@
 package br.com.byron.luderia.dto.request;
 
+import br.com.byron.luderia.dto.filter.UserFilter;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.NotBlank;
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginRequest {
+public class LoginRequest extends UserFilter{
 
-    private String login;
+    private String nickname;
 
     private String password;
 

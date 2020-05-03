@@ -1,12 +1,5 @@
 package br.com.byron.luderia.dto.request;
 
-import java.time.LocalDate;
-import java.util.List;
-
-import org.hibernate.validator.constraints.Length;
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.web.multipart.MultipartFile;
-
 import br.com.byron.luderia.model.GameLevel;
 import br.com.byron.luderia.model.GameStyle;
 import br.com.byron.luderia.model.GameType;
@@ -15,12 +8,15 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Length;
+import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Column;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Positive;
+import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter

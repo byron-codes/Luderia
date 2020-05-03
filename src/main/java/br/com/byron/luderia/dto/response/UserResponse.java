@@ -1,14 +1,12 @@
 package br.com.byron.luderia.dto.response;
 
-import java.util.List;
-
 import br.com.byron.luderia.model.UserType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
+import java.util.List;
 
 @Getter
 @Setter

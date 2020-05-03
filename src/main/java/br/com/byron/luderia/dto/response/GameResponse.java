@@ -1,8 +1,5 @@
 package br.com.byron.luderia.dto.response;
 
-import java.time.LocalDate;
-import java.util.List;
-
 import br.com.byron.luderia.model.GameLevel;
 import br.com.byron.luderia.model.GameStyle;
 import br.com.byron.luderia.model.GameType;
@@ -12,8 +9,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
+import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter

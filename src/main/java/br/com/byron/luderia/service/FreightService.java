@@ -3,7 +3,6 @@ package br.com.byron.luderia.service;
 import br.com.byron.luderia.dto.response.ShipmentResponse;
 import br.com.techzee.correios.ws.ConsultaCorreios;
 import br.com.techzee.correios.ws.dto.CorreiosPrecoPrazo;
-import br.com.techzee.correios.ws.enumeration.CorreiosTipoServico;
 import org.springframework.stereotype.Service;
 
 @Service

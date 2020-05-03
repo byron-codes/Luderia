@@ -1,8 +1,7 @@
 package br.com.byron.luderia.exception;
 
-import org.springframework.http.HttpStatus;
-
 import lombok.Getter;
+import org.springframework.http.HttpStatus;
 
 @Getter
 public class NotFoundEntityException extends RuntimeException {

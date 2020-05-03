@@ -1,32 +1,24 @@
 package br.com.byron.luderia.controller;
 
-import java.util.List;
-
-import javax.validation.Valid;
-
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-
 import br.com.byron.luderia.dto.filter.GenericFilter;
 import br.com.byron.luderia.dto.mapper.IGenericMapper;
 import br.com.byron.luderia.dto.request.GenericRequest;
 import br.com.byron.luderia.dto.response.GenericResponse;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.model.GenericEntity;
+import br.com.byron.luderia.repository.specification.GenericSpecification;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
 
 @CrossOrigin
 @RequiredArgsConstructor
@@ -39,6 +31,8 @@ public class GenericController<Entity extends GenericEntity, Filter extends Gene
 	private final Facade<Entity, Filter> facade;
 
 	private final IGenericMapper<Entity, Request, Response, Filter> mapper;
+
+	private final GenericSpecification<Entity, Filter> specification;
 	
 	@PostMapping
 	@ApiOperation(value = "Save", produces = "application/json", consumes = "application/json")
@@ -53,14 +47,16 @@ public class GenericController<Entity extends GenericEntity, Filter extends Gene
 	@ApiOperation(value = "Find by id", produces = "application/json", consumes = "application/json")
 	@ApiResponse(code = 404, message = "Not found")
 	public ResponseEntity<Response> findById(@PathVariable("id") Long id) {
-		return ResponseEntity.ok(mapper.toResponse(facade.find(mapper.toFilter(id)).get(0)));
+		specification.setFilter(mapper.toFilter(id));
+		return ResponseEntity.ok(mapper.toResponse(facade.find(specification).get(0)));
 	}
 
 	@GetMapping
 	@ApiOperation(value = "Find all with or without filter", produces = "application/json", consumes = "application/json")
 	@ApiResponse(code = 404, message = "Not found")
 	public ResponseEntity<List<Response>> findAll(Filter filter) {
-		return ResponseEntity.ok(mapper.toResponse(facade.find(filter)));
+		specification.setFilter(filter);
+		return ResponseEntity.ok(mapper.toResponse(facade.find(specification)));
 	}
 
 	@PutMapping("/{id}")

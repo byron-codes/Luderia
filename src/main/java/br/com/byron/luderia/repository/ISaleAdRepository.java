@@ -1,8 +1,7 @@
 package br.com.byron.luderia.repository;
 
-import org.springframework.stereotype.Repository;
-
 import br.com.byron.luderia.model.SaleAd;
+import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ISaleAdRepository extends IGenericRepository<SaleAd> {

@@ -1,9 +1,7 @@
 package br.com.byron.luderia.repository;
 
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.stereotype.Repository;
-
 import br.com.byron.luderia.model.Coupon;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 

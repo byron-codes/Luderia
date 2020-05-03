@@ -1,12 +1,11 @@
 package br.com.byron.luderia.dto.mapper;
 
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-
 import br.com.byron.luderia.dto.filter.GameFilter;
 import br.com.byron.luderia.dto.request.GameRequest;
 import br.com.byron.luderia.dto.response.GameResponse;
 import br.com.byron.luderia.model.Game;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring", uses = { IAwardMapper.class, IDesignerMapper.class, IAuthorMapper.class,
 		IThemeMapper.class, IGameCategoryMapper.class, ISleeveModelMapper.class, IMechanicMapper.class })

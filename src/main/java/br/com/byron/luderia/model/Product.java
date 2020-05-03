@@ -1,12 +1,11 @@
 package br.com.byron.luderia.model;
 
-import java.time.LocalDate;
-
-import javax.persistence.*;
-
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Where;
+
+import javax.persistence.*;
+import java.time.LocalDate;
 
 @Getter
 @Setter

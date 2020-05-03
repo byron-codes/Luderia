@@ -1,13 +1,11 @@
 package br.com.byron.luderia.dto.mapper;
 
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-
 import br.com.byron.luderia.dto.filter.AddressFilter;
 import br.com.byron.luderia.dto.request.AddressRequest;
 import br.com.byron.luderia.dto.response.AddressResponse;
 import br.com.byron.luderia.model.Address;
-import org.mapstruct.Mappings;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring", uses = {ICityMapper.class, IStateMapper.class})
 public interface IAddressMapper extends IGenericMapper<Address, AddressRequest, AddressResponse, AddressFilter> {

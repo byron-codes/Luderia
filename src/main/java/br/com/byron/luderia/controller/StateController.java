@@ -1,19 +1,14 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.CityFilter;
 import br.com.byron.luderia.dto.filter.StateFilter;
-import br.com.byron.luderia.dto.mapper.ICityMapper;
 import br.com.byron.luderia.dto.mapper.IStateMapper;
-import br.com.byron.luderia.dto.request.CityRequest;
 import br.com.byron.luderia.dto.request.StateRequest;
-import br.com.byron.luderia.dto.response.CityResponse;
 import br.com.byron.luderia.dto.response.CompanyResponse;
 import br.com.byron.luderia.dto.response.StateResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.City;
 import br.com.byron.luderia.model.State;
-import br.com.byron.luderia.service.CityService;
-import br.com.byron.luderia.service.StateService;
+import br.com.byron.luderia.repository.IStateRepository;
+import br.com.byron.luderia.repository.specification.StateSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
@@ -31,8 +26,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class StateController extends GenericController<State, StateFilter, StateRequest, StateResponse> {
 
 	@Autowired
-	public StateController(StateService service, ExecuteStrategy<State> strategy, IStateMapper mapper) {
-		super(new Facade<State, StateFilter>(service, strategy), mapper);
+	public StateController(ExecuteStrategy<State> strategy, IStateMapper mapper, IStateRepository repository) {
+		super(new Facade<State, StateFilter>(strategy, repository), mapper, new StateSpecification());
 	}
 
 }

@@ -1,9 +1,8 @@
 package br.com.byron.luderia.model;
 
-import java.time.LocalDateTime;
-
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
+import java.time.LocalDateTime;
 
 public class GenericEntityListener {
 

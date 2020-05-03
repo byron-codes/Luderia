@@ -15,9 +15,12 @@ import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.model.Address;
 import br.com.byron.luderia.model.CreditCard;
 import br.com.byron.luderia.model.User;
-import br.com.byron.luderia.service.AddressService;
-import br.com.byron.luderia.service.CreditCardService;
-import br.com.byron.luderia.service.UserService;
+import br.com.byron.luderia.repository.IAddressRepository;
+import br.com.byron.luderia.repository.ICreditCardRepository;
+import br.com.byron.luderia.repository.IUserRepository;
+import br.com.byron.luderia.repository.specification.AddressSpecification;
+import br.com.byron.luderia.repository.specification.CreditCardSpecification;
+import br.com.byron.luderia.repository.specification.UserSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -30,7 +33,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin
@@ -54,17 +56,28 @@ public class UserController {
 
     private final IAddressMapper addressMapper;
 
+    private final UserSpecification specification;
+
+    private final AddressSpecification addressSpecification;
+
+    private final CreditCardSpecification creditCardSpecification;
+
     @Autowired
-    public UserController(UserService service, ExecuteStrategy<User> strategy, IUserMapper mapper,
-                          CreditCardService creditCardService, ExecuteStrategy<CreditCard> creditCardExecuteStrategy,
-                          ICreditCardMapper creditCardMapper, AddressService addressService,
-                          ExecuteStrategy<Address> addressExecuteStrategy, IAddressMapper addressMapper) {
-        this.facade = new Facade<User, UserFilter>(service, strategy);
-        this.creditCardFacade = new Facade<CreditCard, CreditCardFilter>(creditCardService, creditCardExecuteStrategy);
-        this.addressFacade = new Facade<Address, AddressFilter>(addressService, addressExecuteStrategy);
+    public UserController(ExecuteStrategy<User> strategy, IUserMapper mapper,
+                          ExecuteStrategy<CreditCard> creditCardExecuteStrategy,
+                          ICreditCardMapper creditCardMapper,
+                          ExecuteStrategy<Address> addressExecuteStrategy, IAddressMapper addressMapper,
+                          IUserRepository repository, ICreditCardRepository creditCardRepository,
+                          IAddressRepository addressRepository) {
+        this.facade = new Facade<User, UserFilter>(strategy, repository);
+        this.creditCardFacade = new Facade<CreditCard, CreditCardFilter>(creditCardExecuteStrategy, creditCardRepository);
+        this.addressFacade = new Facade<Address, AddressFilter>(addressExecuteStrategy, addressRepository);
         this.mapper = mapper;
         this.creditCardMapper = creditCardMapper;
         this.addressMapper = addressMapper;
+        this.specification = new UserSpecification();
+        this.addressSpecification = new AddressSpecification();
+        this.creditCardSpecification = new CreditCardSpecification();
     }
 
     @PostMapping
@@ -80,14 +93,16 @@ public class UserController {
     @ApiOperation(value = "Find by id", produces = "application/json", consumes = "application/json")
     @ApiResponse(code = 404, message = "Not found")
     public ResponseEntity<UserResponse> findById(@PathVariable("id") Long id) {
-        return ResponseEntity.ok(mapper.toResponse(facade.find(mapper.toFilter(id)).get(0)));
+        specification.setFilter(mapper.toFilter(id));
+        return ResponseEntity.ok(mapper.toResponse(facade.find(specification).get(0)));
     }
 
     @GetMapping
     @ApiOperation(value = "Find all with or without filter", produces = "application/json", consumes = "application/json")
     @ApiResponse(code = 404, message = "Not found")
     public ResponseEntity<List<UserResponse>> findAll(UserFilter filter) {
-        return ResponseEntity.ok(mapper.toResponse(facade.find(filter)));
+        specification.setFilter(filter);
+        return ResponseEntity.ok(mapper.toResponse(facade.find(specification)));
     }
 
     @PutMapping("/{id}")
@@ -95,7 +110,8 @@ public class UserController {
     @ApiResponses(value = { @ApiResponse(code = 204, message = "Success"),
             @ApiResponse(code = 404, message = "Not found") })
     public ResponseEntity<Void> update(@Valid @RequestBody UserUpdateRequest request, @PathVariable("id") Long id) {
-        User user = facade.find(mapper.toFilter(id)).get(0);
+        specification.setFilter(mapper.toFilter(id));
+        User user = facade.find(specification).get(0);
         user.setEmail(request.getEmail());
         user.setName(request.getName());
         facade.update(user);
@@ -113,28 +129,34 @@ public class UserController {
 
     @PutMapping("/password/{id}")
     public ResponseEntity<UserResponse> alterPassword(@Valid @RequestBody UserPasswordRequest request, @PathVariable("id") Long id) {
-        User user = facade.find(mapper.toFilter(id)).get(0);
+        specification.setFilter(mapper.toFilter(id));
+        User user = facade.find(specification).get(0);
         user.setPassword(request.getNewPassword());
         return ResponseEntity.ok().body(mapper.toResponse(facade.update(user)));
     }
 
     @PutMapping("/{id}/card/{idCard}")
     public ResponseEntity<UserResponse> addCard(@PathVariable("id") Long id, @PathVariable("idCard") Long idCard) {
-        User user = facade.find(mapper.toFilter(id)).get(0);
-        user.getCreditCards().add(creditCardFacade.find(creditCardMapper.toFilter(idCard)).get(0));
+        specification.setFilter(mapper.toFilter(id));
+        creditCardSpecification.setFilter(creditCardMapper.toFilter(idCard));
+        User user = facade.find(specification).get(0);
+        user.getCreditCards().add(creditCardFacade.find(creditCardSpecification).get(0));
         return ResponseEntity.ok().body(mapper.toResponse(facade.update(user)));
     }
 
-    @PutMapping("/{id}/address/{idCard}")
-    public ResponseEntity<UserResponse> addAddress(@PathVariable("id") Long id, @PathVariable("idCard") Long idAddress) {
-        User user = facade.find(mapper.toFilter(id)).get(0);
-        user.getAddresses().add(addressFacade.find(addressMapper.toFilter(idAddress)).get(0));
+    @PutMapping("/{id}/address/{idAddress}")
+    public ResponseEntity<UserResponse> addAddress(@PathVariable("id") Long id, @PathVariable("idAddress") Long idAddress) {
+        specification.setFilter(mapper.toFilter(id));
+        addressSpecification.setFilter(addressMapper.toFilter(idAddress));
+        User user = facade.find(specification).get(0);
+        user.getAddresses().add(addressFacade.find(addressSpecification).get(0));
         return ResponseEntity.ok().body(mapper.toResponse(facade.update(user)));
     }
 
     @PostMapping("/login")
     public ResponseEntity<UserResponse> login(@Valid @RequestBody LoginRequest request) {
-        return ResponseEntity.ok().body(mapper.toResponse(facade.find(mapper.fromLogin(request))).get(0));
+        specification.setFilter(request);
+        return ResponseEntity.ok().body(mapper.toResponse(facade.find(specification).get(0)));
     }
 
 }

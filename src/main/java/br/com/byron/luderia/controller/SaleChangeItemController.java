@@ -1,19 +1,14 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.SaleChangeFilter;
 import br.com.byron.luderia.dto.filter.SaleChangeItemFilter;
 import br.com.byron.luderia.dto.mapper.ISaleChangeItemMapper;
-import br.com.byron.luderia.dto.mapper.ISaleChangeMapper;
 import br.com.byron.luderia.dto.request.SaleChangeItemRequest;
-import br.com.byron.luderia.dto.request.SaleChangeRequest;
 import br.com.byron.luderia.dto.response.SaleChangeItemResponse;
-import br.com.byron.luderia.dto.response.SaleChangeResponse;
 import br.com.byron.luderia.dto.response.SaleResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.SaleChange;
 import br.com.byron.luderia.model.SaleChangeItem;
-import br.com.byron.luderia.service.SaleChangeItemService;
-import br.com.byron.luderia.service.SaleChangeService;
+import br.com.byron.luderia.repository.ISaleChangeItemRepository;
+import br.com.byron.luderia.repository.specification.SaleChangeItemSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
@@ -37,16 +32,20 @@ public class SaleChangeItemController extends GenericController<SaleChangeItem, 
 
     private final ISaleChangeItemMapper mapper;
 
+    private final SaleChangeItemSpecification specification;
+
     @Autowired
-    public SaleChangeItemController(SaleChangeItemService service, ExecuteStrategy<SaleChangeItem> strategy, ISaleChangeItemMapper mapper) {
-        super(new Facade<SaleChangeItem, SaleChangeItemFilter>(service, strategy), mapper);
-        facade = new Facade<SaleChangeItem, SaleChangeItemFilter>(service, strategy);
+    public SaleChangeItemController(ExecuteStrategy<SaleChangeItem> strategy, ISaleChangeItemMapper mapper, ISaleChangeItemRepository repository) {
+        super(new Facade<SaleChangeItem, SaleChangeItemFilter>(strategy, repository), mapper, new SaleChangeItemSpecification());
+        facade = new Facade<SaleChangeItem, SaleChangeItemFilter>(strategy, repository);
         this.mapper = mapper;
+        this.specification = new SaleChangeItemSpecification();
     }
 
     @PutMapping("/authorized/{id}/{status}")
     public ResponseEntity<Void> updateAuthorized(@PathVariable("status") Boolean status, @PathVariable("id") Long id) {
-        SaleChangeItem saleChangeItem = facade.find(mapper.toFilter(id)).get(0);
+        specification.setFilter(mapper.toFilter(id));
+        SaleChangeItem saleChangeItem = facade.find(specification).get(0);
         saleChangeItem.setAuthorized(status);
         facade.update(saleChangeItem);
         return ResponseEntity.noContent().build();

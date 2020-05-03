@@ -1,20 +1,20 @@
 package br.com.byron.luderia.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import br.com.byron.luderia.dto.filter.GameSystemFilter;
 import br.com.byron.luderia.dto.mapper.IGameSystemMapper;
 import br.com.byron.luderia.dto.request.GameSystemRequest;
 import br.com.byron.luderia.dto.response.GameSystemResponse;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.model.GameSystem;
-import br.com.byron.luderia.service.GameSystemService;
+import br.com.byron.luderia.repository.IGameSystemRepository;
+import br.com.byron.luderia.repository.specification.GameSystemSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/game-system")
@@ -25,8 +25,8 @@ import io.swagger.annotations.ApiResponses;
 public class GameSystemController extends GenericController<GameSystem, GameSystemFilter, GameSystemRequest, GameSystemResponse> {
 
 	@Autowired
-	public GameSystemController(GameSystemService service, ExecuteStrategy<GameSystem> strategy, IGameSystemMapper mapper) {
-		super(new Facade<GameSystem, GameSystemFilter>(service, strategy), mapper);
+	public GameSystemController(ExecuteStrategy<GameSystem> strategy, IGameSystemMapper mapper, IGameSystemRepository repository) {
+		super(new Facade<GameSystem, GameSystemFilter>(strategy, repository), mapper, new GameSystemSpecification());
 	}
 
 }

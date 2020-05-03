@@ -1,7 +1,5 @@
 package br.com.byron.luderia.dto.request;
 
-import java.util.List;
-
 import br.com.byron.luderia.dto.validations.equalsValidation.EqualFields;
 import br.com.byron.luderia.dto.validations.unique.cpf.UniqueCpf;
 import br.com.byron.luderia.dto.validations.unique.email.UniqueEmail;
@@ -13,10 +11,9 @@ import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.br.CPF;
 
-import javax.validation.Valid;
-import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import java.util.List;
 
 @Getter
 @Setter

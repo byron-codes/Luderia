@@ -1,11 +1,10 @@
 package br.com.byron.luderia.exception;
 
-import java.util.List;
-import java.util.Map;
-
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
-import lombok.Getter;
+import java.util.List;
+import java.util.Map;
 
 @Getter
 public class StrategyException extends RuntimeException {

@@ -1,17 +1,11 @@
 package br.com.byron.luderia.model;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
+import lombok.*;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
-import org.hibernate.annotations.Where;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -41,9 +35,8 @@ public class Sale extends GenericEntity {
 	@JoinColumn(name = "address")
 	private Address address;
 
-	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-	@JoinColumn(name = "credit_card")
-	private CreditCard creditCard;
+	@ManyToMany(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+	private List<CreditCard> creditCard;
 	
 	@ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
 	@JoinColumn(name = "coupon")

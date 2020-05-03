@@ -1,6 +1,5 @@
 package br.com.byron.luderia.dto.response;
 
-import br.com.byron.luderia.dto.request.GenericRequest;
 import br.com.byron.luderia.model.ChangeReason;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,16 +1,15 @@
 package br.com.byron.luderia.model;
 
-import java.time.LocalDate;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Where;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -34,7 +33,7 @@ public class Coupon extends GenericEntity {
 	private Integer quantity;
 	
 	@Column
-	private Integer usedQuatity;
+	private Integer usedQuatity = 0;
 	
 	@Column
 	private String code;

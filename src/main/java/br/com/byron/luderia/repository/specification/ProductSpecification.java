@@ -1,34 +1,51 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.MechanicFilter;
 import br.com.byron.luderia.dto.filter.ProductFilter;
-import br.com.byron.luderia.model.Mechanic;
 import br.com.byron.luderia.model.Product;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import java.util.ArrayList;
+import java.util.List;
 
-@RequiredArgsConstructor
+@NoArgsConstructor
 public class ProductSpecification extends GenericSpecification<Product, ProductFilter> {
-	
-	private final ProductFilter filter;
 
-	@Override
-	public Predicate toPredicate(Root<Product> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+    @Override
+    public Predicate toPredicate(Root<Product> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
 
-		Predicate predicate = criteriaBuilder.conjunction();
+        Predicate predicate = criteriaBuilder.conjunction();
 
-		if (filter == null)
-			return null;
+        if (getFilter() == null)
+            return null;
 
-		generateBasicPredicate(predicate, filter, root,
-				criteriaBuilder, new Product());
+        generateBasicPredicate(predicate, getFilter(), root,
+                criteriaBuilder, new Product());
 
-		return predicate;
 
-	}
+        List<Predicate> orPredicate = new ArrayList<>();
+
+        if (getFilter().getGame() != null && getFilter().getGame()) {
+            orPredicate.add(criteriaBuilder.like(root.get("discriminator"), "GAME"));
+        }
+
+        if (getFilter().getAccessory() != null && getFilter().getAccessory()) {
+            orPredicate.add(criteriaBuilder.like(root.get("discriminator"), "ACCESSORIES"));
+        }
+
+        if (getFilter().getExpansion() != null && getFilter().getExpansion()) {
+            orPredicate.add(criteriaBuilder.like(root.get("discriminator"), "EXPANSION"));
+        }
+
+        //add(predicate, criteriaBuilder.or(orPredicate.toArray(new Predicate[orPredicate.size()])));
+
+        //add(predicate, criteriaBuilder.or(orPredicate.toArray(new Predicate[orPredicate.size()])));
+
+        return predicate;
+
+    }
 
 }

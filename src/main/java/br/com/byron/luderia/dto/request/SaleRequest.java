@@ -1,12 +1,12 @@
 package br.com.byron.luderia.dto.request;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -22,7 +22,7 @@ public class SaleRequest extends GenericRequest {
 
 	private IdRequest address;
 
-	private IdRequest creditCard;
+	private List<IdRequest> creditCard;
 	
 	private IdRequest coupon;
 	

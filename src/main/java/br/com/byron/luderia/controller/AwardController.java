@@ -1,20 +1,20 @@
 package br.com.byron.luderia.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import br.com.byron.luderia.dto.filter.AwardFilter;
 import br.com.byron.luderia.dto.mapper.IAwardMapper;
 import br.com.byron.luderia.dto.request.AwardRequest;
 import br.com.byron.luderia.dto.response.AwardResponse;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.model.Award;
-import br.com.byron.luderia.service.AwardService;
+import br.com.byron.luderia.repository.IAwardRepository;
+import br.com.byron.luderia.repository.specification.AwardSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/award")
@@ -25,8 +25,8 @@ import io.swagger.annotations.ApiResponses;
 public class AwardController extends GenericController<Award, AwardFilter, AwardRequest, AwardResponse> {
 
 	@Autowired
-	public AwardController(AwardService service, ExecuteStrategy<Award> strategy, IAwardMapper mapper) {
-		super(new Facade<Award, AwardFilter>(service, strategy), mapper);
+	public AwardController(ExecuteStrategy<Award> strategy, IAwardMapper mapper, IAwardRepository repository) {
+		super(new Facade<Award, AwardFilter>(strategy, repository), mapper, new AwardSpecification());
 	}
 
 }

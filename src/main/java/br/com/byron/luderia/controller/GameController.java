@@ -1,25 +1,21 @@
 package br.com.byron.luderia.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.*;
-import org.springframework.web.bind.annotation.*;
-
 import br.com.byron.luderia.dto.filter.GameFilter;
 import br.com.byron.luderia.dto.mapper.IGameMapper;
 import br.com.byron.luderia.dto.request.GameRequest;
 import br.com.byron.luderia.dto.response.GameResponse;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.model.Game;
-import br.com.byron.luderia.service.GameService;
+import br.com.byron.luderia.repository.IGameRepository;
+import br.com.byron.luderia.repository.specification.GameSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.time.LocalDate;
 
 @RestController
@@ -34,16 +30,20 @@ public class GameController extends GenericController<Game, GameFilter, GameRequ
 
     private final IGameMapper mapper;
 
+    private final GameSpecification specification;
+
     @Autowired
-    public GameController(GameService service, ExecuteStrategy<Game> strategy, IGameMapper mapper) {
-        super(new Facade<Game, GameFilter>(service, strategy), mapper);
-        facade = new Facade<Game, GameFilter>(service, strategy);
+    public GameController(ExecuteStrategy<Game> strategy, IGameMapper mapper, IGameRepository repository) {
+        super(new Facade<Game, GameFilter>(strategy, repository), mapper, new GameSpecification());
+        facade = new Facade<Game, GameFilter>(strategy, repository);
         this.mapper = mapper;
+        specification = new GameSpecification();
     }
 
     @PutMapping("/{id}/stock")
     public ResponseEntity<GameResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) {
-        Game game = facade.find(mapper.toFilter(id)).get(0);
+        specification.setFilter(mapper.toFilter(id));
+        Game game = facade.find(specification).get(0);
         game.setQuantityStock(game.getQuantityStock() + quantity);
         game.setUpdateStock(LocalDate.now());
         return ResponseEntity.ok().body(mapper.toResponse(facade.update(game)));
