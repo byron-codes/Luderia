@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.GenericFilter;
-import br.com.byron.luderia.dto.mapper.IGenericMapper;
-import br.com.byron.luderia.dto.request.GenericRequest;
-import br.com.byron.luderia.dto.response.GenericResponse;
+import br.com.byron.luderia.domain.filter.GenericFilter;
+import br.com.byron.luderia.domain.mapper.IGenericMapper;
+import br.com.byron.luderia.domain.request.GenericRequest;
+import br.com.byron.luderia.domain.response.GenericResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.GenericEntity;
+import br.com.byron.luderia.domain.model.GenericEntity;
 import br.com.byron.luderia.repository.specification.GenericSpecification;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

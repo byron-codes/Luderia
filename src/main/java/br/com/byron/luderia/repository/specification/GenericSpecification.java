@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.GenericFilter;
-import br.com.byron.luderia.model.GenericEntity;
+import br.com.byron.luderia.domain.filter.GenericFilter;
+import br.com.byron.luderia.domain.model.GenericEntity;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.jpa.domain.Specification;

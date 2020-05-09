@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.AwardFilter;
-import br.com.byron.luderia.dto.mapper.IAwardMapper;
-import br.com.byron.luderia.dto.request.AwardRequest;
-import br.com.byron.luderia.dto.response.AwardResponse;
+import br.com.byron.luderia.domain.filter.AwardFilter;
+import br.com.byron.luderia.domain.mapper.IAwardMapper;
+import br.com.byron.luderia.domain.request.AwardRequest;
+import br.com.byron.luderia.domain.response.AwardResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Award;
+import br.com.byron.luderia.domain.model.Award;
 import br.com.byron.luderia.repository.IAwardRepository;
 import br.com.byron.luderia.repository.specification.AwardSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

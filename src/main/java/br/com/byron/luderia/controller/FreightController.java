@@ -1,6 +1,6 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.response.ShipmentResponse;
+import br.com.byron.luderia.domain.response.ShipmentResponse;
 import br.com.byron.luderia.service.FreightService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;

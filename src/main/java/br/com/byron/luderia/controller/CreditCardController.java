@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.CreditCardFilter;
-import br.com.byron.luderia.dto.mapper.ICreditCardMapper;
-import br.com.byron.luderia.dto.request.CreditCardRequest;
-import br.com.byron.luderia.dto.response.CreditCardResponse;
+import br.com.byron.luderia.domain.filter.CreditCardFilter;
+import br.com.byron.luderia.domain.mapper.ICreditCardMapper;
+import br.com.byron.luderia.domain.request.CreditCardRequest;
+import br.com.byron.luderia.domain.response.CreditCardResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.CreditCard;
+import br.com.byron.luderia.domain.model.CreditCard;
 import br.com.byron.luderia.repository.ICreditCardRepository;
 import br.com.byron.luderia.repository.specification.CreditCardSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

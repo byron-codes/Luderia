@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.DesignerFilter;
-import br.com.byron.luderia.dto.mapper.IDesignerMapper;
-import br.com.byron.luderia.dto.request.DesignerRequest;
-import br.com.byron.luderia.dto.response.DesignerResponse;
+import br.com.byron.luderia.domain.filter.DesignerFilter;
+import br.com.byron.luderia.domain.mapper.IDesignerMapper;
+import br.com.byron.luderia.domain.request.DesignerRequest;
+import br.com.byron.luderia.domain.response.DesignerResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Designer;
+import br.com.byron.luderia.domain.model.Designer;
 import br.com.byron.luderia.repository.IDesignerRepository;
 import br.com.byron.luderia.repository.specification.DesignerSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

@@ -1,7 +1,7 @@
 package br.com.byron.luderia.facade;
 
-import br.com.byron.luderia.dto.filter.GenericFilter;
-import br.com.byron.luderia.model.GenericEntity;
+import br.com.byron.luderia.domain.filter.GenericFilter;
+import br.com.byron.luderia.domain.model.GenericEntity;
 import br.com.byron.luderia.repository.IGenericRepository;
 import br.com.byron.luderia.repository.specification.GenericSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

@@ -1,14 +1,12 @@
 package br.com.byron.luderia.strategy;
 
 import br.com.byron.luderia.exception.NotFoundEntityException;
-import br.com.byron.luderia.exception.StrategyException;
-import br.com.byron.luderia.model.GenericEntity;
+import br.com.byron.luderia.domain.model.GenericEntity;
 import br.com.byron.luderia.repository.IGenericRepository;
 import br.com.byron.luderia.utils.StrategyOrder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.SaleAdFilter;
-import br.com.byron.luderia.dto.mapper.ISaleAdMapper;
-import br.com.byron.luderia.dto.request.SaleAdRequest;
-import br.com.byron.luderia.dto.response.SaleAdResponse;
+import br.com.byron.luderia.domain.filter.SaleAdFilter;
+import br.com.byron.luderia.domain.mapper.ISaleAdMapper;
+import br.com.byron.luderia.domain.request.SaleAdRequest;
+import br.com.byron.luderia.domain.response.SaleAdResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.SaleAd;
+import br.com.byron.luderia.domain.model.SaleAd;
 import br.com.byron.luderia.repository.ISaleAdRepository;
 import br.com.byron.luderia.repository.specification.SaleAdSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

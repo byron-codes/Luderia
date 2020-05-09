@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.AuthorFilter;
-import br.com.byron.luderia.model.Author;
+import br.com.byron.luderia.domain.filter.AuthorFilter;
+import br.com.byron.luderia.domain.model.Author;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

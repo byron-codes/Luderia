@@ -1,6 +1,6 @@
 package br.com.byron.luderia.strategy.strategies;
 
-import br.com.byron.luderia.model.Product;
+import br.com.byron.luderia.domain.model.Product;
 import br.com.byron.luderia.repository.IImageRepository;
 import br.com.byron.luderia.strategy.IStrategy;
 import lombok.RequiredArgsConstructor;

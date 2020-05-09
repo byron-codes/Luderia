@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.ExpansionFilter;
-import br.com.byron.luderia.dto.mapper.IExpansionMapper;
-import br.com.byron.luderia.dto.request.ExpansionRequest;
-import br.com.byron.luderia.dto.response.ExpansionResponse;
+import br.com.byron.luderia.domain.filter.ExpansionFilter;
+import br.com.byron.luderia.domain.mapper.IExpansionMapper;
+import br.com.byron.luderia.domain.request.ExpansionRequest;
+import br.com.byron.luderia.domain.response.ExpansionResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Expansion;
+import br.com.byron.luderia.domain.model.Expansion;
 import br.com.byron.luderia.repository.IExpansionRepository;
 import br.com.byron.luderia.repository.specification.ExpansionSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

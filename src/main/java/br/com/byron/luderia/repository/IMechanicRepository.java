@@ -1,6 +1,6 @@
 package br.com.byron.luderia.repository;
 
-import br.com.byron.luderia.model.Mechanic;
+import br.com.byron.luderia.domain.model.Mechanic;
 import org.springframework.stereotype.Repository;
 
 @Repository

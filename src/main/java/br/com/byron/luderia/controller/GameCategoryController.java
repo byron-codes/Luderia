@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.GameCategoryFilter;
-import br.com.byron.luderia.dto.mapper.IGameCategoryMapper;
-import br.com.byron.luderia.dto.request.GameCategoryRequest;
-import br.com.byron.luderia.dto.response.GameCategoryResponse;
+import br.com.byron.luderia.domain.filter.GameCategoryFilter;
+import br.com.byron.luderia.domain.mapper.IGameCategoryMapper;
+import br.com.byron.luderia.domain.request.GameCategoryRequest;
+import br.com.byron.luderia.domain.response.GameCategoryResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.GameCategory;
+import br.com.byron.luderia.domain.model.GameCategory;
 import br.com.byron.luderia.repository.IGameCategoryRepository;
 import br.com.byron.luderia.repository.specification.GameCategorySpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

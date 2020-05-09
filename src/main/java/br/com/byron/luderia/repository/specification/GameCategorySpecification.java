@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.GameCategoryFilter;
-import br.com.byron.luderia.model.GameCategory;
+import br.com.byron.luderia.domain.filter.GameCategoryFilter;
+import br.com.byron.luderia.domain.model.GameCategory;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

@@ -1,6 +1,6 @@
 package br.com.byron.luderia.service;
 
-import br.com.byron.luderia.dto.response.ShipmentResponse;
+import br.com.byron.luderia.domain.response.ShipmentResponse;
 import br.com.techzee.correios.ws.ConsultaCorreios;
 import br.com.techzee.correios.ws.dto.CorreiosPrecoPrazo;
 import org.springframework.stereotype.Service;

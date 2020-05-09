@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.CityFilter;
-import br.com.byron.luderia.model.City;
+import br.com.byron.luderia.domain.filter.CityFilter;
+import br.com.byron.luderia.domain.model.City;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

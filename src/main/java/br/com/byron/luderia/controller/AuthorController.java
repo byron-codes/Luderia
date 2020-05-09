@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.AuthorFilter;
-import br.com.byron.luderia.dto.mapper.IAuthorMapper;
-import br.com.byron.luderia.dto.request.AuthorRequest;
-import br.com.byron.luderia.dto.response.AuthorResponse;
+import br.com.byron.luderia.domain.filter.AuthorFilter;
+import br.com.byron.luderia.domain.mapper.IAuthorMapper;
+import br.com.byron.luderia.domain.request.AuthorRequest;
+import br.com.byron.luderia.domain.response.AuthorResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Author;
+import br.com.byron.luderia.domain.model.Author;
 import br.com.byron.luderia.repository.IAuthorRepository;
 import br.com.byron.luderia.repository.specification.AuthorSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

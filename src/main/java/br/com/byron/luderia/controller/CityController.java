@@ -1,12 +1,12 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.CityFilter;
-import br.com.byron.luderia.dto.mapper.ICityMapper;
-import br.com.byron.luderia.dto.request.CityRequest;
-import br.com.byron.luderia.dto.response.CityResponse;
-import br.com.byron.luderia.dto.response.CompanyResponse;
+import br.com.byron.luderia.domain.filter.CityFilter;
+import br.com.byron.luderia.domain.mapper.ICityMapper;
+import br.com.byron.luderia.domain.request.CityRequest;
+import br.com.byron.luderia.domain.response.CityResponse;
+import br.com.byron.luderia.domain.response.CompanyResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.City;
+import br.com.byron.luderia.domain.model.City;
 import br.com.byron.luderia.repository.ICityRepository;
 import br.com.byron.luderia.repository.specification.CitySpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

@@ -1,6 +1,6 @@
 package br.com.byron.luderia.repository;
 
-import br.com.byron.luderia.model.GameSystem;
+import br.com.byron.luderia.domain.model.GameSystem;
 import org.springframework.stereotype.Repository;
 
 @Repository

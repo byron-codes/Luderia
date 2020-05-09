@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.SleeveModelFilter;
-import br.com.byron.luderia.model.SleeveModel;
+import br.com.byron.luderia.domain.filter.SleeveModelFilter;
+import br.com.byron.luderia.domain.model.SleeveModel;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

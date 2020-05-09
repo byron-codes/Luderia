@@ -1,9 +1,8 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.request.ReportPeriodRequest;
-import br.com.byron.luderia.dto.response.GameResponse;
-import br.com.byron.luderia.dto.response.LineChartItem;
-import br.com.byron.luderia.dto.response.LineChartItemMonth;
+import br.com.byron.luderia.domain.request.ReportPeriodRequest;
+import br.com.byron.luderia.domain.response.GameResponse;
+import br.com.byron.luderia.domain.response.LineChartItem;
 import br.com.byron.luderia.service.ReportService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
@@ -13,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.time.LocalDate;
 import java.util.List;
 
 @RestController

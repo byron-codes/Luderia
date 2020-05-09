@@ -1,6 +1,6 @@
 package br.com.byron.luderia.repository;
 
-import br.com.byron.luderia.model.SaleItem;
+import br.com.byron.luderia.domain.model.SaleItem;
 import org.springframework.stereotype.Repository;
 
 @Repository

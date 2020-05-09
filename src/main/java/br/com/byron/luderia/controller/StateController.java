@@ -1,12 +1,12 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.StateFilter;
-import br.com.byron.luderia.dto.mapper.IStateMapper;
-import br.com.byron.luderia.dto.request.StateRequest;
-import br.com.byron.luderia.dto.response.CompanyResponse;
-import br.com.byron.luderia.dto.response.StateResponse;
+import br.com.byron.luderia.domain.filter.StateFilter;
+import br.com.byron.luderia.domain.mapper.IStateMapper;
+import br.com.byron.luderia.domain.request.StateRequest;
+import br.com.byron.luderia.domain.response.CompanyResponse;
+import br.com.byron.luderia.domain.response.StateResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.State;
+import br.com.byron.luderia.domain.model.State;
 import br.com.byron.luderia.repository.IStateRepository;
 import br.com.byron.luderia.repository.specification.StateSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

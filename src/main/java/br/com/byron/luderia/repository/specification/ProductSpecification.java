@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.ProductFilter;
-import br.com.byron.luderia.model.Product;
+import br.com.byron.luderia.domain.filter.ProductFilter;
+import br.com.byron.luderia.domain.model.Product;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.CreditCardFilter;
-import br.com.byron.luderia.model.CreditCard;
+import br.com.byron.luderia.domain.filter.CreditCardFilter;
+import br.com.byron.luderia.domain.model.CreditCard;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

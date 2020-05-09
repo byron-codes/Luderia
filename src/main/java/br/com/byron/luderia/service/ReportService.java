@@ -1,11 +1,10 @@
 package br.com.byron.luderia.service;
 
-import br.com.byron.luderia.dto.response.LineChartItem;
-import br.com.byron.luderia.dto.response.LineChartItemMonth;
-import br.com.byron.luderia.dto.response.ReportType;
-import br.com.byron.luderia.model.Sale;
-import br.com.byron.luderia.model.SaleChange;
-import br.com.byron.luderia.model.SaleItem;
+import br.com.byron.luderia.domain.response.LineChartItem;
+import br.com.byron.luderia.domain.response.ReportType;
+import br.com.byron.luderia.domain.model.Sale;
+import br.com.byron.luderia.domain.model.SaleChange;
+import br.com.byron.luderia.domain.model.SaleItem;
 import br.com.byron.luderia.repository.ISaleChangeRepository;
 import br.com.byron.luderia.repository.ISaleRepository;
 import lombok.RequiredArgsConstructor;

@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.ExpansionFilter;
-import br.com.byron.luderia.model.Expansion;
+import br.com.byron.luderia.domain.filter.ExpansionFilter;
+import br.com.byron.luderia.domain.model.Expansion;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

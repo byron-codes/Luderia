@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.CommentFilter;
-import br.com.byron.luderia.dto.mapper.ICommentMapper;
-import br.com.byron.luderia.dto.request.CommentRequest;
-import br.com.byron.luderia.dto.response.CommentResponse;
+import br.com.byron.luderia.domain.filter.CommentFilter;
+import br.com.byron.luderia.domain.mapper.ICommentMapper;
+import br.com.byron.luderia.domain.request.CommentRequest;
+import br.com.byron.luderia.domain.response.CommentResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Comment;
+import br.com.byron.luderia.domain.model.Comment;
 import br.com.byron.luderia.repository.ICommentRepository;
 import br.com.byron.luderia.repository.specification.CommentSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

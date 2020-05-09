@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.CommentFilter;
-import br.com.byron.luderia.model.Comment;
+import br.com.byron.luderia.domain.filter.CommentFilter;
+import br.com.byron.luderia.domain.model.Comment;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

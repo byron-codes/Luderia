@@ -1,10 +1,10 @@
 package br.com.byron.luderia.strategy.strategies;
 
 import br.com.byron.luderia.exception.NotFoundEntityException;
-import br.com.byron.luderia.model.Coupon;
-import br.com.byron.luderia.model.Product;
-import br.com.byron.luderia.model.Sale;
-import br.com.byron.luderia.model.SaleItem;
+import br.com.byron.luderia.domain.model.Coupon;
+import br.com.byron.luderia.domain.model.Product;
+import br.com.byron.luderia.domain.model.Sale;
+import br.com.byron.luderia.domain.model.SaleItem;
 import br.com.byron.luderia.repository.ICouponRepository;
 import br.com.byron.luderia.repository.IProductRepository;
 import br.com.byron.luderia.strategy.IStrategy;

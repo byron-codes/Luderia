@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.SleeveModelFilter;
-import br.com.byron.luderia.dto.mapper.ISleeveModelMapper;
-import br.com.byron.luderia.dto.request.SleeveModelRequest;
-import br.com.byron.luderia.dto.response.SleeveModelResponse;
+import br.com.byron.luderia.domain.filter.SleeveModelFilter;
+import br.com.byron.luderia.domain.mapper.ISleeveModelMapper;
+import br.com.byron.luderia.domain.request.SleeveModelRequest;
+import br.com.byron.luderia.domain.response.SleeveModelResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.SleeveModel;
+import br.com.byron.luderia.domain.model.SleeveModel;
 import br.com.byron.luderia.repository.ISleeveModelRepository;
 import br.com.byron.luderia.repository.specification.SleeveModelSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

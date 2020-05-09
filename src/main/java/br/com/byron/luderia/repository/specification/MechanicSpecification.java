@@ -1,7 +1,7 @@
 package br.com.byron.luderia.repository.specification;
 
-import br.com.byron.luderia.dto.filter.MechanicFilter;
-import br.com.byron.luderia.model.Mechanic;
+import br.com.byron.luderia.domain.filter.MechanicFilter;
+import br.com.byron.luderia.domain.model.Mechanic;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.criteria.CriteriaBuilder;

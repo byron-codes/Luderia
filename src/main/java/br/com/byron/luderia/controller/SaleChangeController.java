@@ -1,13 +1,13 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.SaleChangeFilter;
-import br.com.byron.luderia.dto.mapper.ISaleChangeMapper;
-import br.com.byron.luderia.dto.request.SaleChangeRequest;
-import br.com.byron.luderia.dto.response.SaleChangeResponse;
-import br.com.byron.luderia.dto.response.SaleResponse;
+import br.com.byron.luderia.domain.filter.SaleChangeFilter;
+import br.com.byron.luderia.domain.mapper.ISaleChangeMapper;
+import br.com.byron.luderia.domain.request.SaleChangeRequest;
+import br.com.byron.luderia.domain.response.SaleChangeResponse;
+import br.com.byron.luderia.domain.response.SaleResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.ChangeStatus;
-import br.com.byron.luderia.model.SaleChange;
+import br.com.byron.luderia.domain.model.ChangeStatus;
+import br.com.byron.luderia.domain.model.SaleChange;
 import br.com.byron.luderia.repository.ISaleChangeRepository;
 import br.com.byron.luderia.repository.specification.SaleChangeSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

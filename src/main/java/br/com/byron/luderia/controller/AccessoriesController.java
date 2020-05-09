@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.AccessoriesFilter;
-import br.com.byron.luderia.dto.mapper.IAccessoriesMapper;
-import br.com.byron.luderia.dto.request.AccessoriesRequest;
-import br.com.byron.luderia.dto.response.AccessoriesResponse;
+import br.com.byron.luderia.domain.filter.AccessoriesFilter;
+import br.com.byron.luderia.domain.mapper.IAccessoriesMapper;
+import br.com.byron.luderia.domain.request.AccessoriesRequest;
+import br.com.byron.luderia.domain.response.AccessoriesResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Accessories;
+import br.com.byron.luderia.domain.model.Accessories;
 import br.com.byron.luderia.repository.IAccessoriesRepository;
 import br.com.byron.luderia.repository.specification.AccessoriesSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

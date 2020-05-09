@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.MechanicFilter;
-import br.com.byron.luderia.dto.mapper.IMechanicMapper;
-import br.com.byron.luderia.dto.request.MechanicRequest;
-import br.com.byron.luderia.dto.response.MechanicResponse;
+import br.com.byron.luderia.domain.filter.MechanicFilter;
+import br.com.byron.luderia.domain.mapper.IMechanicMapper;
+import br.com.byron.luderia.domain.request.MechanicRequest;
+import br.com.byron.luderia.domain.response.MechanicResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Mechanic;
+import br.com.byron.luderia.domain.model.Mechanic;
 import br.com.byron.luderia.repository.IMechanicRepository;
 import br.com.byron.luderia.repository.specification.MechanicSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

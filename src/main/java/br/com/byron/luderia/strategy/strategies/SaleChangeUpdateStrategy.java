@@ -1,8 +1,8 @@
 package br.com.byron.luderia.strategy.strategies;
 
-import br.com.byron.luderia.model.SaleChange;
-import br.com.byron.luderia.model.SaleChangeItem;
-import br.com.byron.luderia.model.SaleStatus;
+import br.com.byron.luderia.domain.model.SaleChange;
+import br.com.byron.luderia.domain.model.SaleChangeItem;
+import br.com.byron.luderia.domain.model.SaleStatus;
 import br.com.byron.luderia.repository.ISaleRepository;
 import br.com.byron.luderia.repository.IUserRepository;
 import br.com.byron.luderia.strategy.IStrategy;

@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.CompanyFilter;
-import br.com.byron.luderia.dto.mapper.ICompanyMapper;
-import br.com.byron.luderia.dto.request.CompanyRequest;
-import br.com.byron.luderia.dto.response.CompanyResponse;
+import br.com.byron.luderia.domain.filter.CompanyFilter;
+import br.com.byron.luderia.domain.mapper.ICompanyMapper;
+import br.com.byron.luderia.domain.request.CompanyRequest;
+import br.com.byron.luderia.domain.response.CompanyResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.Company;
+import br.com.byron.luderia.domain.model.Company;
 import br.com.byron.luderia.repository.ICompanyRepository;
 import br.com.byron.luderia.repository.specification.CompanySpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

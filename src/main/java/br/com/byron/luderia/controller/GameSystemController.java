@@ -1,11 +1,11 @@
 package br.com.byron.luderia.controller;
 
-import br.com.byron.luderia.dto.filter.GameSystemFilter;
-import br.com.byron.luderia.dto.mapper.IGameSystemMapper;
-import br.com.byron.luderia.dto.request.GameSystemRequest;
-import br.com.byron.luderia.dto.response.GameSystemResponse;
+import br.com.byron.luderia.domain.filter.GameSystemFilter;
+import br.com.byron.luderia.domain.mapper.IGameSystemMapper;
+import br.com.byron.luderia.domain.request.GameSystemRequest;
+import br.com.byron.luderia.domain.response.GameSystemResponse;
 import br.com.byron.luderia.facade.Facade;
-import br.com.byron.luderia.model.GameSystem;
+import br.com.byron.luderia.domain.model.GameSystem;
 import br.com.byron.luderia.repository.IGameSystemRepository;
 import br.com.byron.luderia.repository.specification.GameSystemSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;
