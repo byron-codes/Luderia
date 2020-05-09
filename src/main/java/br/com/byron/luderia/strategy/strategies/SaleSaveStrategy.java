@@ -54,30 +54,31 @@ public class SaleSaveStrategy implements IStrategy<Sale> {
             total += product.getValue() * item.getQuantity();
             productRepository.save(product);
 
-            sale.setSaleStatus(SaleStatus.PROCESSING);
-
-            if (couponTotal > total) {
-                total = 0.0;
-            } else {
-                total -= couponTotal;
-            }
-
-            if (sale.getBuyer().getBalance() >= total) {
-                sale.getBuyer().setBalance(sale.getBuyer().getBalance() - total);
-                total = 0.0;
-            } else {
-                sale.getBuyer().setBalance(0.0);
-                total -= sale.getBuyer().getBalance();
-            }
-
-            total += sale.getFreight();
-
-            sale.setTotal(total);
-
-            sale.getBuyer().setSalesValue(sale.getBuyer().getSalesValue() + total);
-            userRepository.save(sale.getBuyer());
-
         }
+
+        sale.setSaleStatus(SaleStatus.PROCESSING);
+
+        if (couponTotal > total) {
+            total = 0.0;
+        } else {
+            total -= couponTotal;
+        }
+
+        if (sale.getBuyer().getBalance() >= total) {
+            sale.getBuyer().setBalance(sale.getBuyer().getBalance() - total);
+            total = 0.0;
+        } else {
+            sale.getBuyer().setBalance(0.0);
+            total -= sale.getBuyer().getBalance();
+        }
+
+        total += sale.getFreight();
+
+        sale.setTotal(total);
+
+        sale.getBuyer().setSalesValue(sale.getBuyer().getSalesValue() + total);
+        userRepository.save(sale.getBuyer());
+
 
         List<SaleItem> saleItems = new ArrayList<>();
         for (SaleItem saleItem : sale.getItems()) {

@@ -23,37 +23,21 @@ public class ExecuteStrategy<Entity extends GenericEntity> {
     private final StrategyOrder strategyOrder = new StrategyOrder();
 
     public void save(Entity entity) {
-
-        Map<String, List<String>> errors = new HashMap<>();
-
         List<String> strategyList = strategyOrder.getSaveOrder().get(entity.getClass().getSimpleName());
         if (strategyList != null) {
-            for (String strategy : strategyOrder.getSaveOrder().get(entity.getClass().getSimpleName())) {
-                errors.putAll(strategies.get(strategy).execute(entity));
+            for (String strategy : strategyList) {
+                strategies.get(strategy).execute(entity);
             }
         }
-
-        if (!errors.isEmpty()) {
-            throw new StrategyException(errors, "An error occurred when strategies were executed");
-        }
-
     }
 
     public void update(Entity entity) {
-
-        Map<String, List<String>> errors = new HashMap<>();
         List<String> strategyList = strategyOrder.getUpdateOrder().get(entity.getClass().getSimpleName());
         if (strategyList != null) {
             for (String strategy : strategyList) {
-                errors.putAll(strategies.get(strategy).execute(entity));
+                strategies.get(strategy).execute(entity);
             }
         }
-
-
-        if (!errors.isEmpty()) {
-            throw new StrategyException(errors, "An error occurred when strategies were executed");
-        }
-
     }
 
     public void delete(Entity entity) {

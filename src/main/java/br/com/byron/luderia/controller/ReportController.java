@@ -1,7 +1,9 @@
 package br.com.byron.luderia.controller;
 
+import br.com.byron.luderia.dto.request.ReportPeriodRequest;
 import br.com.byron.luderia.dto.response.GameResponse;
 import br.com.byron.luderia.dto.response.LineChartItem;
+import br.com.byron.luderia.dto.response.LineChartItemMonth;
 import br.com.byron.luderia.service.ReportService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
@@ -10,6 +12,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -24,14 +28,14 @@ public class ReportController {
 
     private final ReportService reportService;
 
-    @GetMapping("/item-type")
-    public ResponseEntity<List<LineChartItem>> salesYear(@RequestParam("year") Integer year) {
-        return ResponseEntity.ok(reportService.getSalesYear(year));
+    @GetMapping("/item-type/period")
+    public ResponseEntity<List<LineChartItem>> salesYear(@Valid ReportPeriodRequest reportPeriodRequest) {
+        return ResponseEntity.ok(reportService.getSalesYear(reportPeriodRequest.getStartDate(), reportPeriodRequest.getEndDate(), reportPeriodRequest.getType()));
     }
 
-    @GetMapping("/sale-change")
-    public ResponseEntity<List<LineChartItem>> salesAndChanges(@RequestParam("year") Integer year) {
-        return ResponseEntity.ok(reportService.getSalesAndChanges(year));
+    @GetMapping("/sale-change/period")
+    public ResponseEntity<List<LineChartItem>> salesAndChangesPeriod(@Valid ReportPeriodRequest reportPeriodRequest) {
+        return ResponseEntity.ok(reportService.getSalesAndChanges(reportPeriodRequest.getStartDate(), reportPeriodRequest.getEndDate(), reportPeriodRequest.getType()));
     }
 
 }

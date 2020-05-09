@@ -1,6 +1,8 @@
 package br.com.byron.luderia.service;
 
 import br.com.byron.luderia.dto.response.LineChartItem;
+import br.com.byron.luderia.dto.response.LineChartItemMonth;
+import br.com.byron.luderia.dto.response.ReportType;
 import br.com.byron.luderia.model.Sale;
 import br.com.byron.luderia.model.SaleChange;
 import br.com.byron.luderia.model.SaleItem;
@@ -11,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 
@@ -22,29 +25,61 @@ public class ReportService {
 
     private final ISaleChangeRepository saleChangeRepository;
 
-    public List<LineChartItem> getSalesYear(Integer year) {
+    public List<LineChartItem> getSalesYear(LocalDate startDate, LocalDate endDate, ReportType type) {
 
-        LocalDateTime startDate = LocalDate.parse(year + "-01-01").atStartOfDay();
-        LocalDateTime endDate = LocalDate.parse(year + "-12-31").atTime(23, 59);
+        LocalDateTime startDateTime = startDate.atStartOfDay();
+        LocalDateTime endDateTime = endDate.atTime(23, 59);
 
-        LineChartItem games = new LineChartItem("GAME");
-        LineChartItem expansions = new LineChartItem("EXPANSION");
-        LineChartItem accessories = new LineChartItem("ACCESSORIES");
+        LineChartItem gameReport = new LineChartItem("GAME");
+        LineChartItem expansionsReport = new LineChartItem("EXPANSION");
+        LineChartItem accessoriesReport = new LineChartItem("ACCESSORIES");
 
-        List<Sale> sales = saleRepository.getByPeriod(startDate, endDate);
+        List<Sale> sales = saleRepository.getByPeriod(startDateTime, endDateTime);
+        DateTimeFormatter formatter = null;
+
+
+        switch (type) {
+            case DAILY:
+                formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+                while (startDate.isBefore(endDate) || startDate.isEqual(endDate)) {
+                    gameReport.getValues().put(formatter.format(startDate), 0);
+                    expansionsReport.getValues().put(formatter.format(startDate), 0);
+                    accessoriesReport.getValues().put(formatter.format(startDate), 0);
+                    startDate = startDate.plusDays(1);
+                }
+                break;
+            case MONTHLY:
+                formatter = DateTimeFormatter.ofPattern("MM/yyyy");
+                while (startDate.isBefore(endDate) || startDate.isEqual(endDate)) {
+                    gameReport.getValues().put(formatter.format(startDate), 0);
+                    expansionsReport.getValues().put(formatter.format(startDate), 0);
+                    accessoriesReport.getValues().put(formatter.format(startDate), 0);
+                    startDate = startDate.plusMonths(1);
+                }
+                break;
+            case YEARLY:
+                formatter = DateTimeFormatter.ofPattern("yyyy");
+                while (startDate.isBefore(endDate) || startDate.isEqual(endDate)) {
+                    gameReport.getValues().put(formatter.format(startDate), 0);
+                    expansionsReport.getValues().put(formatter.format(startDate), 0);
+                    accessoriesReport.getValues().put(formatter.format(startDate), 0);
+                    startDate = startDate.plusYears(1);
+                }
+                break;
+        }
 
         for (Sale sale : sales) {
-            Integer monthValue = sale.getCreationDate().getMonth().getValue();
+            String date = formatter.format(sale.getCreationDate().toLocalDate());
             for (SaleItem item : sale.getItems()) {
                 switch (item.getProduct().getDiscriminator()) {
                     case "GAME":
-                        games.getValues().put(monthValue, games.getValues().get(monthValue) + item.getQuantity());
+                        gameReport.getValues().put(date, Integer.parseInt(gameReport.getValues().get(date).toString()) + item.getQuantity());
                         break;
                     case "EXPANSION":
-                        expansions.getValues().put(monthValue, expansions.getValues().get(monthValue) + item.getQuantity());
+                        expansionsReport.getValues().put(date, Integer.parseInt(expansionsReport.getValues().get(date).toString()) + item.getQuantity());
                         break;
                     case "ACCESSORIES":
-                        accessories.getValues().put(monthValue, accessories.getValues().get(monthValue) + item.getQuantity());
+                        accessoriesReport.getValues().put(date, Integer.parseInt(accessoriesReport.getValues().get(date).toString()) + item.getQuantity());
                         break;
                     default:
                         break;
@@ -52,30 +87,78 @@ public class ReportService {
             }
         }
 
-        return Arrays.asList(games, expansions, accessories);
+        return Arrays.asList(gameReport, expansionsReport, accessoriesReport);
 
     }
 
-    public List<LineChartItem> getSalesAndChanges(Integer year) {
+    public List<LineChartItem> getSalesAndChanges(LocalDate startDate, LocalDate endDate, ReportType type) {
 
-        LocalDateTime startDate = LocalDate.parse(year + "-01-01").atStartOfDay();
-        LocalDateTime endDate = LocalDate.parse(year + "-12-31").atTime(23, 59);
+        LocalDateTime startDateTime = startDate.atStartOfDay();
+        LocalDateTime endDateTime = endDate.atTime(23, 59);
 
         LineChartItem salesReport = new LineChartItem("SALE");
         LineChartItem changesReport = new LineChartItem("CHANGE");
 
-        List<Sale> sales = saleRepository.getByPeriod(startDate, endDate);
-        List<SaleChange> changes = saleChangeRepository.getByPeriod(startDate, endDate);
+        List<Sale> sales = saleRepository.getByPeriod(startDateTime, endDateTime);
+        List<SaleChange> changes = saleChangeRepository.getByPeriod(startDateTime, endDateTime);
+        DateTimeFormatter formatter;
 
 
-        for (Sale sale : sales) {
-            Integer monthValue = sale.getCreationDate().getMonth().getValue();
-            salesReport.getValues().put(monthValue, salesReport.getValues().get(monthValue) + 1);
-        }
+        switch (type) {
+            case DAILY:
+                formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+                while (startDate.isBefore(endDate) || startDate.isEqual(endDate)) {
+                    salesReport.getValues().put(formatter.format(startDate), 0);
+                    changesReport.getValues().put(formatter.format(startDate), 0);
+                    startDate = startDate.plusDays(1);
+                }
 
-        for (SaleChange change : changes) {
-            Integer monthValue = change.getCreationDate().getMonth().getValue();
-            changesReport.getValues().put(monthValue, changesReport.getValues().get(monthValue) + 1);
+                for (Sale sale : sales) {
+                    String date = formatter.format(sale.getCreationDate().toLocalDate());
+                    salesReport.getValues().put(date, Integer.parseInt(salesReport.getValues().get(date).toString()) + 1);
+                }
+
+                for (SaleChange change : changes) {
+                    String date = formatter.format(change.getCreationDate().toLocalDate());
+                    changesReport.getValues().put(date, Integer.parseInt(changesReport.getValues().get(date).toString()) + 1);
+                }
+                break;
+            case MONTHLY:
+                formatter = DateTimeFormatter.ofPattern("MM/yyyy");
+                while (startDate.isBefore(endDate) || startDate.isEqual(endDate)) {
+                    salesReport.getValues().put(formatter.format(startDate), 0);
+                    changesReport.getValues().put(formatter.format(startDate), 0);
+                    startDate = startDate.plusMonths(1);
+                }
+
+                for (Sale sale : sales) {
+                    String date = formatter.format(sale.getCreationDate().toLocalDate());
+                    salesReport.getValues().put(date, Integer.parseInt(salesReport.getValues().get(date).toString()) + 1);
+                }
+
+                for (SaleChange change : changes) {
+                    String date = formatter.format(change.getCreationDate().toLocalDate());
+                    changesReport.getValues().put(date, Integer.parseInt(changesReport.getValues().get(date).toString()) + 1);
+                }
+                break;
+            case YEARLY:
+                formatter = DateTimeFormatter.ofPattern("yyyy");
+                while (startDate.isBefore(endDate) || startDate.isEqual(endDate)) {
+                    salesReport.getValues().put(formatter.format(startDate), 0);
+                    changesReport.getValues().put(formatter.format(startDate), 0);
+                    startDate = startDate.plusYears(1);
+                }
+
+                for (Sale sale : sales) {
+                    String date = formatter.format(sale.getCreationDate().toLocalDate());
+                    salesReport.getValues().put(date, Integer.parseInt(salesReport.getValues().get(date).toString()) + 1);
+                }
+
+                for (SaleChange change : changes) {
+                    String date = formatter.format(change.getCreationDate().toLocalDate());
+                    changesReport.getValues().put(date, Integer.parseInt(changesReport.getValues().get(date).toString()) + 1);
+                }
+                break;
         }
 
         return Arrays.asList(salesReport, changesReport);

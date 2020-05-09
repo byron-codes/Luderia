@@ -42,7 +42,7 @@ public class Sale extends GenericEntity {
 	@JoinColumn(name = "coupon")
 	private Coupon coupon;
 	
-	@OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	private List<SaleItem> items = new ArrayList<>();
 	
 }
