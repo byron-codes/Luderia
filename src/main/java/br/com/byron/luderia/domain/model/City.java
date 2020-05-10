@@ -13,7 +13,6 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "_city")
 @Where(clause = "active=true")
 public class City extends GenericEntity {
 

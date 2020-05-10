@@ -1,6 +1,6 @@
 package br.com.byron.luderia.domain.response;
 
-import br.com.byron.luderia.domain.model.UserType;
+import br.com.byron.luderia.domain.enumerable.UserType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

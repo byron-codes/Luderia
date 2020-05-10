@@ -1,16 +1,15 @@
 package br.com.byron.luderia.domain.response;
 
-import br.com.byron.luderia.domain.model.GameLevel;
-import br.com.byron.luderia.domain.model.GameStyle;
-import br.com.byron.luderia.domain.model.GameType;
-import br.com.byron.luderia.domain.model.LanguageDependence;
+import br.com.byron.luderia.domain.enumerable.GameLevel;
+import br.com.byron.luderia.domain.enumerable.GameStyle;
+import br.com.byron.luderia.domain.enumerable.GameType;
+import br.com.byron.luderia.domain.enumerable.LanguageDependence;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @Getter
 @Setter
@@ -58,24 +57,6 @@ public class GameResponse extends ProductResponse {
 
 	private GameLevel level;
 
-	private List<AuthorResponse> authors;
-
-	private List<AwardResponse> awards;
-
-	private CompanyResponse company;
-
-	private List<DesignerResponse> designers;
-
-	private List<GameCategoryResponse> categories;
-
-	private GameSystemResponse system;
-
 	private ImageResponse image;
-
-	private List<MechanicResponse> mechanics;
-
-	private List<SleeveModelResponse> sleeves;
-
-	private List<ThemeResponse> themes;
 
 }

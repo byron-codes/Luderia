@@ -1,5 +1,6 @@
 package br.com.byron.luderia.domain.model;
 
+import br.com.byron.luderia.domain.enumerable.ChangeReason;
 import lombok.*;
 import org.hibernate.annotations.Where;
 
@@ -10,7 +11,6 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "_sale_change_item")
 @ToString
 @Where(clause = "active=true")
 public class SaleChangeItem extends GenericEntity {

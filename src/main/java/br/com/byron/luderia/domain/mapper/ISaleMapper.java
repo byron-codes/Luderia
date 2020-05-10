@@ -4,7 +4,7 @@ import br.com.byron.luderia.domain.filter.SaleFilter;
 import br.com.byron.luderia.domain.request.SaleRequest;
 import br.com.byron.luderia.domain.response.SaleResponse;
 import br.com.byron.luderia.domain.model.Sale;
-import br.com.byron.luderia.domain.model.SaleStatus;
+import br.com.byron.luderia.domain.enumerable.SaleStatus;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;

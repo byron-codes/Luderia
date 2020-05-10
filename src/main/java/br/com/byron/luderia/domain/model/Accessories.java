@@ -16,7 +16,6 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @DiscriminatorValue("ACCESSORIES")
 @PrimaryKeyJoinColumn(name = "id_product")
-@Table(name = "_accessories")
 @Where(clause = "active=true")
 public class Accessories extends Product {
 

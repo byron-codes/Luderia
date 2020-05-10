@@ -7,7 +7,7 @@ import br.com.byron.luderia.domain.request.SaleStatusRequest;
 import br.com.byron.luderia.domain.response.SaleResponse;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.model.Sale;
-import br.com.byron.luderia.domain.model.SaleStatus;
+import br.com.byron.luderia.domain.enumerable.SaleStatus;
 import br.com.byron.luderia.repository.ISaleRepository;
 import br.com.byron.luderia.repository.specification.SaleSpecification;
 import br.com.byron.luderia.strategy.ExecuteStrategy;

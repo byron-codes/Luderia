@@ -1,6 +1,6 @@
 package br.com.byron.luderia.domain.request;
 
-import br.com.byron.luderia.domain.model.ChangeReason;
+import br.com.byron.luderia.domain.enumerable.ChangeReason;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

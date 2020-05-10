@@ -1,7 +1,7 @@
 package br.com.byron.luderia.domain.request;
 
-import br.com.byron.luderia.domain.model.GameLevel;
-import br.com.byron.luderia.domain.model.LanguageDependence;
+import br.com.byron.luderia.domain.enumerable.GameLevel;
+import br.com.byron.luderia.domain.enumerable.LanguageDependence;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

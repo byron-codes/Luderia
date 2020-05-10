@@ -1,5 +1,6 @@
 package br.com.byron.luderia.domain.model;
 
+import br.com.byron.luderia.domain.enumerable.SaleStatus;
 import lombok.*;
 import org.hibernate.annotations.Where;
 
@@ -12,7 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "_sale")
 @ToString
 @Where(clause = "active=true")
 public class Sale extends GenericEntity {

@@ -7,8 +7,7 @@ import br.com.byron.luderia.domain.model.Expansion;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(componentModel = "spring", uses = { IAwardMapper.class, IDesignerMapper.class, IAuthorMapper.class,
-		IThemeMapper.class, IGameCategoryMapper.class, ISleeveModelMapper.class, IMechanicMapper.class })
+@Mapper(componentModel = "spring")
 public interface IExpansionMapper extends IGenericMapper<Expansion, ExpansionRequest, ExpansionResponse, ExpansionFilter> {
 
 	@Mapping(source = "image", target = "image.file")

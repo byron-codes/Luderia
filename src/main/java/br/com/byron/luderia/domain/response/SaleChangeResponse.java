@@ -1,7 +1,7 @@
 package br.com.byron.luderia.domain.response;
 
 import br.com.byron.luderia.domain.request.IdRequest;
-import br.com.byron.luderia.domain.model.ChangeStatus;
+import br.com.byron.luderia.domain.enumerable.ChangeStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

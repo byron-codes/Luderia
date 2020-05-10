@@ -12,7 +12,6 @@ import java.time.LocalDate;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "product_discriminator")
-@Table(name = "_product")
 @Where(clause = "active=true")
 public class Product extends GenericEntity {
 

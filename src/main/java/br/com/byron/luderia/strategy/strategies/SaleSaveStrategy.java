@@ -1,8 +1,8 @@
 package br.com.byron.luderia.strategy.strategies;
 
+import br.com.byron.luderia.domain.enumerable.SaleStatus;
 import br.com.byron.luderia.domain.model.*;
 import br.com.byron.luderia.exception.NotFoundEntityException;
-import br.com.byron.luderia.model.*;
 import br.com.byron.luderia.repository.*;
 import br.com.byron.luderia.service.FreightService;
 import br.com.byron.luderia.strategy.IStrategy;

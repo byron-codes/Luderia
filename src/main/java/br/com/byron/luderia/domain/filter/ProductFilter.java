@@ -1,6 +1,6 @@
 package br.com.byron.luderia.domain.filter;
 
-import br.com.byron.luderia.domain.model.GameLevel;
+import br.com.byron.luderia.domain.enumerable.GameLevel;
 import lombok.Getter;
 import lombok.Setter;
 

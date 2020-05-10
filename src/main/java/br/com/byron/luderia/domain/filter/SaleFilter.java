@@ -1,6 +1,6 @@
 package br.com.byron.luderia.domain.filter;
 
-import br.com.byron.luderia.domain.model.SaleStatus;
+import br.com.byron.luderia.domain.enumerable.SaleStatus;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,5 +1,7 @@
 package br.com.byron.luderia.domain.model;
 
+import br.com.byron.luderia.domain.enumerable.GameLevel;
+import br.com.byron.luderia.domain.enumerable.LanguageDependence;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,7 +18,6 @@ import java.time.LocalDate;
 @Entity
 @DiscriminatorValue("EXPANSION")
 @PrimaryKeyJoinColumn(name = "id_product")
-@Table(name = "_expansion")
 @Where(clause = "active=true")
 public class Expansion extends Product {
 

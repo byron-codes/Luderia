@@ -1,5 +1,6 @@
 package br.com.byron.luderia.domain.model;
 
+import br.com.byron.luderia.domain.enumerable.UserType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "_user")
 @Where(clause = "active=true")
 public class User extends GenericEntity {
 
