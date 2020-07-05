@@ -15,6 +15,7 @@ import java.util.List;
 @Entity
 @ToString
 @Where(clause = "active=true")
+@Table(name = "_sale")
 public class Sale extends GenericEntity {
 
 	@Column

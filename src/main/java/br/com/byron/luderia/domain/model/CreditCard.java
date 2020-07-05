@@ -16,6 +16,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Entity
 @Where(clause = "active=true")
+@Table(name = "_credit_card")
 public class CreditCard extends GenericEntity {
 
 	@Column

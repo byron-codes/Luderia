@@ -17,6 +17,7 @@ import javax.persistence.Table;
 @DiscriminatorValue("ACCESSORIES")
 @PrimaryKeyJoinColumn(name = "id_product")
 @Where(clause = "active=true")
+@Table(name = "_accessories")
 public class Accessories extends Product {
 
 }

@@ -10,10 +10,14 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginRequest extends UserFilter{
+public class LoginRequest extends UserFilter {
 
     private String nickname;
 
     private String password;
 
+    @Override
+    public Long getId() {
+        return null;
+    }
 }

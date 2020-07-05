@@ -16,6 +16,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Entity
 @Where(clause = "active=true")
+@Table(name = "_state")
 public class State extends GenericEntity {
 
 	@Column

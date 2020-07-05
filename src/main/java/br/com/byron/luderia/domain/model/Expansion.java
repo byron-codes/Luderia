@@ -19,6 +19,7 @@ import java.time.LocalDate;
 @DiscriminatorValue("EXPANSION")
 @PrimaryKeyJoinColumn(name = "id_product")
 @Where(clause = "active=true")
+@Table(name = "_expansion")
 public class Expansion extends Product {
 
 	@Column

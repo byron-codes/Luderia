@@ -14,6 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Where(clause = "active=true")
+@Table(name = "_address")
 public class Address extends GenericEntity {
 
 	@Column

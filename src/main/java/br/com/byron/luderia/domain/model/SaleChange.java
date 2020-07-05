@@ -17,6 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Where(clause = "active=true")
+@Table(name = "_sale_change")
 public class SaleChange extends GenericEntity {
 
 	@Column

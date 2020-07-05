@@ -17,6 +17,7 @@ import javax.persistence.Transient;
 @NoArgsConstructor
 @Entity
 @Where(clause = "active=true")
+@Table(name = "_image")
 public class Image extends GenericEntity {
 
 	@Column

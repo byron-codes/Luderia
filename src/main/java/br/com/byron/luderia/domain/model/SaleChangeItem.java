@@ -13,6 +13,7 @@ import javax.persistence.*;
 @Entity
 @ToString
 @Where(clause = "active=true")
+@Table(name = "_sale_change_item")
 public class SaleChangeItem extends GenericEntity {
 
 	@Column

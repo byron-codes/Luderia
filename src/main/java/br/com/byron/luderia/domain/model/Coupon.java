@@ -17,6 +17,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Entity
 @Where(clause = "active=true")
+@Table(name = "_coupon")
 public class Coupon extends GenericEntity {
 	
 	@Column

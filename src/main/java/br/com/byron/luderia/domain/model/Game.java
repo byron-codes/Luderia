@@ -21,52 +21,53 @@ import java.time.LocalDate;
 @DiscriminatorValue("GAME")
 @PrimaryKeyJoinColumn(name = "id_product")
 @Where(clause = "active=true")
+@Table(name = "_game")
 public class Game extends Product {
 
-	@Column
-	private String originalName;
+    @Column
+    private String originalName;
 
-	@Column
-	private String components;
+    @Column
+    private String components;
 
-	@Column
-	private LocalDate releaseDate;
+    @Column
+    private LocalDate releaseDate;
 
-	@Column
-	private Integer minPlayers;
+    @Column
+    private Integer minPlayers;
 
-	@Column
-	private Integer maxPlayers;
+    @Column
+    private Integer maxPlayers;
 
-	@Column
-	private Integer minMinutes;
+    @Column
+    private Integer minMinutes;
 
-	@Column
-	private Integer maxMinutes;
+    @Column
+    private Integer maxMinutes;
 
-	@Column
-	private Integer minAge;
+    @Column
+    private Integer minAge;
 
-	@Column
-	private Boolean national;
+    @Column
+    private Boolean national;
 
-	@Column
-	private Double avaliation;
+    @Column
+    private Double avaliation;
 
-	@Column
-	@Enumerated(EnumType.STRING)
-	private LanguageDependence languageDependence;
+    @Column
+    @Enumerated(EnumType.STRING)
+    private LanguageDependence languageDependence;
 
-	@Column
-	@Enumerated(EnumType.STRING)
-	private GameStyle style;
+    @Column
+    @Enumerated(EnumType.STRING)
+    private GameStyle style;
 
-	@Column
-	@Enumerated(EnumType.STRING)
-	private GameType type;
+    @Column
+    @Enumerated(EnumType.STRING)
+    private GameType type;
 
-	@Column
-	@Enumerated(EnumType.STRING)
-	private GameLevel level;
+    @Column
+    @Enumerated(EnumType.STRING)
+    private GameLevel level;
 
 }

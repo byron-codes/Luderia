@@ -13,6 +13,7 @@ import java.time.LocalDate;
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "product_discriminator")
 @Where(clause = "active=true")
+@Table(name = "_product")
 public class Product extends GenericEntity {
 
 	@Basic

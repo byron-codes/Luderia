@@ -4,6 +4,7 @@ import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.domain.model.GenericEntity;
 import br.com.byron.luderia.repository.IGenericRepository;
 import br.com.byron.luderia.utils.StrategyOrder;
+import br.com.byron.luderia.utils.StrategyUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -39,9 +40,10 @@ public class ExecuteStrategy<Entity extends GenericEntity> {
     }
 
     public void delete(Entity entity) {
-        String className = new StringBuilder().append(entity.getClass().getSimpleName().substring(0, 1).toLowerCase()).append(entity.getClass().getSimpleName().substring(1)).toString();
-        repository.get(className).findById(entity.getId()).orElseThrow(() -> new NotFoundEntityException("Entity nor found"));
+        repository.get(StrategyUtils.formatRepositoryName(entity.getClass())).findById(entity.getId()).orElseThrow(() -> new NotFoundEntityException("Entity nor found"));
         entity.setActive(false);
     }
+
+
 
 }
