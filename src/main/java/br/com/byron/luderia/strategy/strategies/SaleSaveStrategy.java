@@ -29,7 +29,7 @@ public class SaleSaveStrategy implements IStrategy<Sale> {
     private final ISaleItemRepository saleItemRepository;
 
     @Override
-    public void execute(Sale sale) {
+    public void execute(Sale sale) throws NotFoundEntityException {
         sale.setAddress(addressRepository.findById(sale.getAddress().getId()).orElseThrow(() -> new RuntimeException()));
         sale.setFreight(freightService.calculate(sale.getAddress().getCep()).getFreight());
         sale.setBuyer(userRepository.findById(sale.getBuyer().getId()).orElseThrow(() -> new RuntimeException()));

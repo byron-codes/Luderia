@@ -11,6 +11,7 @@ import br.com.byron.luderia.domain.request.UserPasswordRequest;
 import br.com.byron.luderia.domain.request.UserRequest;
 import br.com.byron.luderia.domain.request.UserUpdateRequest;
 import br.com.byron.luderia.domain.response.UserResponse;
+import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.model.Address;
 import br.com.byron.luderia.domain.model.CreditCard;
@@ -83,7 +84,7 @@ public class UserController {
     @PostMapping
     @ApiOperation(value = "Save", produces = "application/json", consumes = "application/json")
     @ApiResponse(code = 201, message = "Created")
-    public ResponseEntity<UserResponse> save(@Valid @RequestBody UserRequest entidadeRequest) {
+    public ResponseEntity<UserResponse> save(@Valid @RequestBody UserRequest entidadeRequest) throws NotFoundEntityException {
         User e = facade.save(mapper.toEntity(entidadeRequest));
         return ResponseEntity.status(HttpStatus.CREATED).header(HttpHeaders.LOCATION, e.getId().toString())
                 .body(mapper.toResponse(e));
@@ -109,7 +110,7 @@ public class UserController {
     @ApiOperation(value = "Update", produces = "application/json", consumes = "application/json")
     @ApiResponses(value = { @ApiResponse(code = 204, message = "Success"),
             @ApiResponse(code = 404, message = "Not found") })
-    public ResponseEntity<Void> update(@Valid @RequestBody UserUpdateRequest request, @PathVariable("id") Long id) {
+    public ResponseEntity<Void> update(@Valid @RequestBody UserUpdateRequest request, @PathVariable("id") Long id) throws NotFoundEntityException {
         specification.setFilter(mapper.toFilter(id));
         User user = facade.find(specification).get(0);
         user.setEmail(request.getEmail());
@@ -122,13 +123,13 @@ public class UserController {
     @ApiOperation(value = "Delete", produces = "application/json", consumes = "application/json")
     @ApiResponses(value = { @ApiResponse(code = 204, message = "Success"),
             @ApiResponse(code = 404, message = "Not found") })
-    public ResponseEntity<Void> delete(@RequestParam Long id) {
+    public ResponseEntity<Void> delete(@RequestParam Long id) throws NotFoundEntityException {
         facade.delete(mapper.toEntity(id));
         return ResponseEntity.noContent().build();
     }
 
     @PutMapping("/password/{id}")
-    public ResponseEntity<UserResponse> alterPassword(@Valid @RequestBody UserPasswordRequest request, @PathVariable("id") Long id) {
+    public ResponseEntity<UserResponse> alterPassword(@Valid @RequestBody UserPasswordRequest request, @PathVariable("id") Long id) throws NotFoundEntityException {
         specification.setFilter(mapper.toFilter(id));
         User user = facade.find(specification).get(0);
         user.setPassword(request.getNewPassword());
@@ -136,7 +137,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}/card/{idCard}")
-    public ResponseEntity<UserResponse> addCard(@PathVariable("id") Long id, @PathVariable("idCard") Long idCard) {
+    public ResponseEntity<UserResponse> addCard(@PathVariable("id") Long id, @PathVariable("idCard") Long idCard) throws NotFoundEntityException {
         specification.setFilter(mapper.toFilter(id));
         creditCardSpecification.setFilter(creditCardMapper.toFilter(idCard));
         User user = facade.find(specification).get(0);
@@ -145,7 +146,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}/address/{idAddress}")
-    public ResponseEntity<UserResponse> addAddress(@PathVariable("id") Long id, @PathVariable("idAddress") Long idAddress) {
+    public ResponseEntity<UserResponse> addAddress(@PathVariable("id") Long id, @PathVariable("idAddress") Long idAddress) throws NotFoundEntityException {
         specification.setFilter(mapper.toFilter(id));
         addressSpecification.setFilter(addressMapper.toFilter(idAddress));
         User user = facade.find(specification).get(0);

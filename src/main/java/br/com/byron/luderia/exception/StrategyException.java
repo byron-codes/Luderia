@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 @Getter
-public class StrategyException extends RuntimeException {
+public class StrategyException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 	

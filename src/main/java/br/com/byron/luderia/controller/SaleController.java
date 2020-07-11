@@ -5,6 +5,7 @@ import br.com.byron.luderia.domain.mapper.ISaleMapper;
 import br.com.byron.luderia.domain.request.SaleRequest;
 import br.com.byron.luderia.domain.request.SaleStatusRequest;
 import br.com.byron.luderia.domain.response.SaleResponse;
+import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.model.Sale;
 import br.com.byron.luderia.domain.enumerable.SaleStatus;
@@ -44,7 +45,7 @@ public class SaleController extends GenericController<Sale, SaleFilter, SaleRequ
     }
 
     @PutMapping("/status/{id}")
-    public ResponseEntity<SaleResponse> addAddress(@PathVariable("id") Long id, @RequestBody SaleStatusRequest saleStatusRequest) {
+    public ResponseEntity<SaleResponse> addAddress(@PathVariable("id") Long id, @RequestBody SaleStatusRequest saleStatusRequest) throws NotFoundEntityException {
         specification.setFilter(mapper.toFilter(id));
         Sale sale = facade.find(specification).get(0);
         sale.setSaleStatus(saleStatusRequest.getSaleStatus());

@@ -20,7 +20,7 @@ public class SaleQuantityStrategy implements IStrategy<Sale> {
     private final IProductRepository productRepository;
 
     @Override
-    public void execute(Sale sale) {
+    public void execute(Sale sale) throws NotFoundEntityException {
         if (sale.getCoupon() != null && sale.getCoupon().getId() != null) {
             Coupon coupon = couponRepository.findById(sale.getCoupon().getId()).orElseThrow(() -> new NotFoundEntityException("Coupon not found"));
             if (coupon.getUsedQuatity() == coupon.getQuantity()) {

@@ -4,6 +4,7 @@ import br.com.byron.luderia.domain.filter.AccessoriesFilter;
 import br.com.byron.luderia.domain.mapper.IAccessoriesMapper;
 import br.com.byron.luderia.domain.request.AccessoriesRequest;
 import br.com.byron.luderia.domain.response.AccessoriesResponse;
+import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.model.Accessories;
 import br.com.byron.luderia.repository.IAccessoriesRepository;
@@ -39,7 +40,7 @@ public class AccessoriesController
 	}
 
 	@PutMapping("/{id}/stock")
-	public ResponseEntity<AccessoriesResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) {
+	public ResponseEntity<AccessoriesResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) throws NotFoundEntityException {
 		accessoriesSpecification.setFilter(mapper.toFilter(id));
 		Accessories accessories = facade.find(accessoriesSpecification).get(0);
 		accessories.setQuantityStock(accessories.getQuantityStock() + quantity);

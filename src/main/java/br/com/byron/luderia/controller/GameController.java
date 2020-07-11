@@ -4,6 +4,7 @@ import br.com.byron.luderia.domain.filter.GameFilter;
 import br.com.byron.luderia.domain.mapper.IGameMapper;
 import br.com.byron.luderia.domain.request.GameRequest;
 import br.com.byron.luderia.domain.response.GameResponse;
+import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.model.Game;
 import br.com.byron.luderia.repository.IGameRepository;
@@ -41,7 +42,7 @@ public class GameController extends GenericController<Game, GameFilter, GameRequ
     }
 
     @PutMapping("/{id}/stock")
-    public ResponseEntity<GameResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) {
+    public ResponseEntity<GameResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) throws NotFoundEntityException {
         specification.setFilter(mapper.toFilter(id));
         Game game = facade.find(specification).get(0);
         game.setQuantityStock(game.getQuantityStock() + quantity);

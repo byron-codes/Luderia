@@ -4,7 +4,7 @@ import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
 @Getter
-public class NotFoundEntityException extends RuntimeException {
+public class NotFoundEntityException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 

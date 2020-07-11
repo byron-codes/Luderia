@@ -4,6 +4,7 @@ import br.com.byron.luderia.domain.filter.ExpansionFilter;
 import br.com.byron.luderia.domain.mapper.IExpansionMapper;
 import br.com.byron.luderia.domain.request.ExpansionRequest;
 import br.com.byron.luderia.domain.response.ExpansionResponse;
+import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.model.Expansion;
 import br.com.byron.luderia.repository.IExpansionRepository;
@@ -39,7 +40,7 @@ public class ExpansionController
 	}
 
 	@PutMapping("/{id}/stock")
-	public ResponseEntity<ExpansionResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) {
+	public ResponseEntity<ExpansionResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) throws NotFoundEntityException {
 		specification.setFilter(mapper.toFilter(id));
 		Expansion expansion = facade.find(specification).get(0);
 		expansion.setQuantityStock(expansion.getQuantityStock() + quantity);

@@ -4,6 +4,7 @@ import br.com.byron.luderia.domain.filter.CouponFilter;
 import br.com.byron.luderia.domain.mapper.ICouponMapper;
 import br.com.byron.luderia.domain.request.CouponRequest;
 import br.com.byron.luderia.domain.response.CouponResponse;
+import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.model.Coupon;
 import br.com.byron.luderia.repository.ICouponRepository;
@@ -45,7 +46,7 @@ public class CouponController extends GenericController<Coupon, CouponFilter, Co
 	}
 
 	@PutMapping("/{id}/quantity")
-	public ResponseEntity<CouponResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) {
+	public ResponseEntity<CouponResponse> addStock(@PathVariable("id") Long id, @RequestParam Integer quantity) throws NotFoundEntityException {
 		specification.setFilter(mapper.toFilter(id));
 		Coupon coupon = facade.find(specification).get(0);
 		coupon.setQuantity(coupon.getQuantity() + quantity);

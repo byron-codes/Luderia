@@ -1,0 +1,3467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="br.com.byron.luderia.controller.StateController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/StateController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="369" x="4150" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="br.com.byron.luderia.domain.response.ShipmentResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/ShipmentResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="231" width="237" x="167" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="br.com.byron.luderia.strategy.strategies.SaleSaveStrategy" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/strategy/strategies/SaleSaveStrategy.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="651" x="4600" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="br.com.byron.luderia.domain.mapper.ISaleItemMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/ISaleItemMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="253" x="7937" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="br.com.byron.luderia.controller.SaleController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/SaleController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="373" x="10434" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="br.com.byron.luderia.domain.request.ReportPeriodRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/ReportPeriodRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="213" width="293" x="667" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="br.com.byron.luderia.domain.model.GenericEntityListener" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/GenericEntityListener.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="183" x="444" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="br.com.byron.luderia.domain.response.StateResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/StateResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="177" width="163" x="3849" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="br.com.byron.luderia.domain.response.SaleChangeItemResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/SaleChangeItemResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="303" width="416" x="5493" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="br.com.byron.luderia.domain.model.User" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="807" width="680" x="8770" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="11" language="java" name="br.com.byron.luderia.domain.enumerable.GameLevel" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/GameLevel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="124" x="5069" y="4755"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="12" language="java" name="br.com.byron.luderia.domain.filter.SaleChangeFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/SaleChangeFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="208" x="11699" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="13" language="java" name="br.com.byron.luderia.domain.mapper.IProductMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IProductMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="115" x="10392" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="14" language="java" name="br.com.byron.luderia.repository.ICouponRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/ICouponRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="209" x="5464" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="15" language="java" name="br.com.byron.luderia.controller.SaleChangeItemController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/SaleChangeItemController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="577" x="11913" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="16" language="java" name="br.com.byron.luderia.repository.ISaleRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/ISaleRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="288" x="7445" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="17" language="java" name="br.com.byron.luderia.repository.specification.AddressSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/AddressSpecification.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="367" x="16114" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <annotation id="18" language="java" name="br.com.byron.luderia.domain.validators.equalsValidation.EqualFields" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/equalsValidation/EqualFields.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="123" width="203" x="1000" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <class id="19" language="java" name="br.com.byron.luderia.controller.ExpansionController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/ExpansionController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="469" x="11404" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="br.com.byron.luderia.domain.request.UserUpdateRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/UserUpdateRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="177" width="190" x="167" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="br.com.byron.luderia.domain.validators.unique.cpf.UniqueCpfValidator" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/unique/cpf/UniqueCpfValidator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="69" width="300" x="7673" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="br.com.byron.luderia.domain.filter.ProductFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/ProductFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="411" width="198" x="11947" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="br.com.byron.luderia.domain.request.CouponRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/CouponRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="393" width="323" x="418" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="br.com.byron.luderia.domain.model.SaleChange" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/SaleChange.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="213" width="333" x="7897" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="br.com.byron.luderia.controller.AccessoriesController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/AccessoriesController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="517" x="10847" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="br.com.byron.luderia.domain.request.AccessoriesRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/AccessoriesRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="285" width="262" x="781" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="br.com.byron.luderia.domain.request.StateRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/StateRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="123" x="2700" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="br.com.byron.luderia.domain.model.Expansion" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/Expansion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="393" width="425" x="6109" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <annotation id="29" language="java" name="br.com.byron.luderia.domain.validators.unique.email.UniqueEmail" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/unique/email/UniqueEmail.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="203" x="1243" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <class id="30" language="java" name="br.com.byron.luderia.domain.model.SaleChangeItem" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/SaleChangeItem.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="321" width="333" x="6954" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="br.com.byron.luderia.domain.model.Game" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/Game.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="753" width="703" x="6149" y="3206"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="32" language="java" name="br.com.byron.luderia.domain.mapper.IGenericMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IGenericMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="159" width="299" x="9674" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="33" language="java" name="br.com.byron.luderia.repository.IExpansionRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IExpansionRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="147" x="11409" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="34" language="java" name="br.com.byron.luderia.domain.request.CityRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/CityRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="116" x="2863" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="br.com.byron.luderia.domain.request.SaleChangeItemRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/SaleChangeItemRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="267" width="318" x="3027" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="br.com.byron.luderia.repository.specification.CouponSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/CouponSpecification.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="362" x="13690" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="37" language="java" name="br.com.byron.luderia.strategy.IStrategy" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/strategy/IStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="51" width="122" x="5302" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="38" language="java" name="br.com.byron.luderia.domain.response.ExpansionResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/ExpansionResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="447" width="559" x="4489" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="br.com.byron.luderia.repository.specification.AccessoriesSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/AccessoriesSpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="387" x="12406" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="40" language="java" name="br.com.byron.luderia.domain.mapper.ICouponMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/ICouponMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="207" x="9814" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="41" language="java" name="br.com.byron.luderia.domain.model.Accessories" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/Accessories.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="96" x="7164" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="br.com.byron.luderia.controller.UserController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/UserController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="213" width="1022" x="14427" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="br.com.byron.luderia.domain.filter.AddressFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/AddressFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="100" x="16714" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="br.com.byron.luderia.repository.specification.CreditCardSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/CreditCardSpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="376" x="15310" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="45" language="java" name="br.com.byron.luderia.domain.enumerable.ProductState" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/ProductState.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="156" x="1486" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="46" language="java" name="br.com.byron.luderia.facade.Facade" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/facade/Facade.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="123" width="321" x="11659" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="br.com.byron.luderia.repository.specification.StateSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/StateSpecification.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="350" x="16521" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="br.com.byron.luderia.domain.response.LineChartItem" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/LineChartItem.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="141" width="202" x="3908" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="br.com.byron.luderia.domain.request.CreditCardRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/CreditCardRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="501" width="381" x="1924" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="br.com.byron.luderia.domain.filter.CouponFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/CouponFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="95" x="16851" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="51" language="java" name="br.com.byron.luderia.domain.mapper.ISaleChangeItemMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/ISaleChangeItemMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="266" x="9508" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="52" language="java" name="br.com.byron.luderia.controller.ReportController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/ReportController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="439" x="7203" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="53" language="java" name="br.com.byron.luderia.repository.IAccessoriesRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IAccessoriesRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="160" x="11596" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="54" language="java" name="br.com.byron.luderia.controller.CouponController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/CouponController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="417" x="12530" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="55" language="java" name="br.com.byron.luderia.domain.enumerable.GameType" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/GameType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="140" x="5233" y="4755"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="56" language="java" name="br.com.byron.luderia.domain.mapper.IStateMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IStateMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="100" x="8230" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="57" language="java" name="br.com.byron.luderia.domain.model.Image" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/Image.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="285" width="187" x="6937" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="br.com.byron.luderia.domain.response.UserResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/UserResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="645" width="779" x="6093" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="br.com.byron.luderia.domain.request.UserRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/UserRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="465" width="517" x="1753" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="br.com.byron.luderia.domain.response.CreditCardResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/CreditCardResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="285" width="251" x="6266" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="61" language="java" name="br.com.byron.luderia.domain.enumerable.ChangeReason" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/ChangeReason.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="168" x="5291" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="62" language="java" name="br.com.byron.luderia.domain.response.GenericResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/GenericResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="127" x="5930" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="63" language="java" name="br.com.byron.luderia.strategy.strategies.SaleQuantityStrategy" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/strategy/strategies/SaleQuantityStrategy.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="320" x="4240" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="64" language="java" name="br.com.byron.luderia.domain.validators.equalsValidation.EqualFieldsValidator" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/equalsValidation/EqualFieldsValidator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="141" width="268" x="1682" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="65" language="java" name="br.com.byron.luderia.domain.filter.AccessoriesFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/AccessoriesFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="124" x="16854" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="66" language="java" name="br.com.byron.luderia.repository.IUserRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IUserRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="216" x="8693" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="67" language="java" name="br.com.byron.luderia.domain.filter.GameFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/GameFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="85" x="17018" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="68" language="java" name="br.com.byron.luderia.utils.StrategyUtils" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/utils/StrategyUtils.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="69" width="202" x="1990" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="69" language="java" name="br.com.byron.luderia.domain.filter.GenericFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/GenericFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="104" x="17294" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="70" language="java" name="br.com.byron.luderia.domain.response.CouponResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/CouponResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="447" width="359" x="6557" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="71" language="java" name="br.com.byron.luderia.repository.specification.CitySpecification" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/CitySpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="343" x="16911" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="72" language="java" name="br.com.byron.luderia.domain.model.CreditCard" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/CreditCard.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="501" width="341" x="9471" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="73" language="java" name="br.com.byron.luderia.domain.filter.ExpansionFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/ExpansionFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="111" x="17143" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="74" language="java" name="br.com.byron.luderia.domain.response.LineChartItemMonth" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/LineChartItemMonth.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="159" width="205" x="2232" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="75" language="java" name="br.com.byron.luderia.repository.IImageRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IImageRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="123" x="3686" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="76" language="java" name="br.com.byron.luderia.controller.SaleChangeController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/SaleChangeController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="501" x="12987" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="77" language="java" name="br.com.byron.luderia.domain.filter.CouponCodeFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/CouponCodeFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="147" x="16407" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="78" language="java" name="br.com.byron.luderia.repository.IGenericRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IGenericRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="177" x="11222" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="79" language="java" name="br.com.byron.luderia.strategy.strategies.SaleChangeSaveStrategy" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/strategy/strategies/SaleChangeSaveStrategy.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="69" width="366" x="5860" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="80" language="java" name="br.com.byron.luderia.controller.CreditCardController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/CreditCardController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="473" x="4559" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="81" language="java" name="br.com.byron.luderia.domain.request.ImageRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/ImageRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="130" x="3019" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="82" language="java" name="br.com.byron.luderia.domain.filter.SaleFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/SaleFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="176" x="11006" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="83" language="java" name="br.com.byron.luderia.repository.ISaleChangeRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/ISaleChangeRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="325" x="11044" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="84" language="java" name="br.com.byron.luderia.domain.model.Coupon" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/Coupon.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="447" width="318" x="10218" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="85" language="java" name="br.com.byron.luderia.domain.response.ReportType" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/ReportType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="135" x="667" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="86" language="java" name="br.com.byron.luderia.domain.mapper.IUserMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IUserMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="253" x="11324" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="87" language="java" name="br.com.byron.luderia.strategy.ExecuteStrategy" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/strategy/ExecuteStrategy.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="416" x="11222" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="88" language="java" name="br.com.byron.luderia.repository.IProductRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IProductRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="133" x="5713" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="89" language="java" name="br.com.byron.luderia.repository.IGameRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IGameRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="121" x="11796" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="90" language="java" name="br.com.byron.luderia.domain.model.GenericEntity" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/GenericEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="375" width="204" x="7392" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="91" language="java" name="br.com.byron.luderia.domain.enumerable.SaleStatus" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/SaleStatus.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="141" width="184" x="9247" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="92" language="java" name="br.com.byron.luderia.domain.enumerable.UserType" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/UserType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="124" x="9083" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="93" language="java" name="br.com.byron.luderia.domain.request.AddressRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/AddressRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="555" width="399" x="2588" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="94" language="java" name="br.com.byron.luderia.domain.enumerable.LanguageDependence" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/LanguageDependence.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="141" width="200" x="4329" y="4755"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="95" language="java" name="br.com.byron.luderia.domain.model.State" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/State.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="177" width="129" x="10783" y="3206"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="96" language="java" name="br.com.byron.luderia.repository.specification.GameSpecification" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/GameSpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="353" x="14917" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="97" language="java" name="br.com.byron.luderia.domain.response.ProductResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/ProductResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="339" width="278" x="3922" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="98" language="java" name="br.com.byron.luderia.controller.AddressController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/AddressController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="437" x="5072" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="99" language="java" name="br.com.byron.luderia.service.FreightService" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/service/FreightService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="69" width="201" x="4248" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="100" language="java" name="br.com.byron.luderia.repository.IStateRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IStateRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="118" x="11957" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="101" language="java" name="br.com.byron.luderia.controller.GameController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/GameController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="381" x="13985" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="102" language="java" name="br.com.byron.luderia.domain.mapper.IImageMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IImageMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="105" x="8370" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="103" language="java" name="br.com.byron.luderia.domain.response.ImageResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/ImageResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="135" x="7612" y="4755"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="104" language="java" name="br.com.byron.luderia.repository.ICreditCardRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/ICreditCardRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="149" x="12115" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="105" language="java" name="br.com.byron.luderia.domain.response.GameResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/GameResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="1113" width="1019" x="5069" y="3206"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="106" language="java" name="br.com.byron.luderia.domain.request.SaleStatusRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/SaleStatusRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="178" x="7703" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="107" language="java" name="br.com.byron.luderia.domain.model.Sale" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/Sale.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="411" width="444" x="7432" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="108" language="java" name="br.com.byron.luderia.domain.response.SaleItemResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/SaleItemResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="213" width="271" x="5182" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="109" language="java" name="br.com.byron.luderia.domain.model.Address" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/Address.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="483" width="326" x="9852" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="110" language="java" name="br.com.byron.luderia.domain.enumerable.ChangeStatus" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/ChangeStatus.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="165" x="10597" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <annotation id="111" language="java" name="br.com.byron.luderia.domain.validators.unique.cpf.UniqueCpf" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/unique/cpf/UniqueCpf.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="203" x="2477" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <interface id="112" language="java" name="br.com.byron.luderia.repository.IAddressRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/IAddressRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="136" x="8318" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="113" language="java" name="br.com.byron.luderia.domain.request.GameRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/GameRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="1509" width="1353" x="3634" y="3206"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="114" language="java" name="br.com.byron.luderia.domain.model.City" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/City.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="159" width="127" x="8151" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="115" language="java" name="br.com.byron.luderia.domain.filter.CreditCardFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/CreditCardFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="113" x="17294" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="116" language="java" name="br.com.byron.luderia.domain.request.ProductRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/ProductRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="135" x="3189" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="117" language="java" name="br.com.byron.luderia.domain.validators.unique.nickname.UniqueNicknameValidator" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/unique/nickname/UniqueNicknameValidator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="69" width="300" x="8013" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="118" language="java" name="br.com.byron.luderia.domain.mapper.IAddressMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IAddressMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="87" width="257" x="10816" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <annotation id="119" language="java" name="br.com.byron.luderia.domain.validators.unique.nickname.UniqueNickname" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/unique/nickname/UniqueNickname.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="203" x="2720" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <class id="120" language="java" name="br.com.byron.luderia.domain.response.AddressResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/AddressResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="465" width="455" x="3427" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="121" language="java" name="br.com.byron.luderia.domain.filter.ImageFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/ImageFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="87" x="17447" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="122" language="java" name="br.com.byron.luderia.repository.specification.SaleChangeItemSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/SaleChangeItemSpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="402" x="13248" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="123" language="java" name="br.com.byron.luderia.strategy.strategies.ProductSaveStrategy" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/strategy/strategies/ProductSaveStrategy.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="219" x="3126" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="124" language="java" name="br.com.byron.luderia.domain.mapper.IExpansionMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IExpansionMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="273" x="9195" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="125" language="java" name="br.com.byron.luderia.domain.model.Product" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/Product.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="411" width="181" x="6977" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="126" language="java" name="br.com.byron.luderia.domain.filter.SaleChangeItemFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/SaleChangeItemFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="145" x="17574" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="127" language="java" name="br.com.byron.luderia.repository.specification.ProductSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/ProductSpecification.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="362" x="14515" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="128" language="java" name="br.com.byron.luderia.repository.specification.GenericSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/GenericSpecification.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="231" width="403" x="15489" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="129" language="java" name="br.com.byron.luderia.domain.validators.unique.email.UniqueEmailValidator" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/unique/email/UniqueEmailValidator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="69" width="300" x="8353" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="130" language="java" name="br.com.byron.luderia.domain.response.SaleChangeResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/SaleChangeResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="285" width="518" x="5370" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="131" language="java" name="br.com.byron.luderia.controller.FreightController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/FreightController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="288" x="2798" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="132" language="java" name="br.com.byron.luderia.domain.request.ExpansionRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/ExpansionRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="519" width="528" x="2538" y="3206"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="133" language="java" name="br.com.byron.luderia.domain.filter.CityFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/CityFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="129" x="17759" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="134" language="java" name="br.com.byron.luderia.exception.ErrorResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/exception/ErrorResponse.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="227" x="2963" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="135" language="java" name="br.com.byron.luderia.exception.NotFoundEntityException" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/exception/NotFoundEntityException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="181" x="3230" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="136" language="java" name="br.com.byron.luderia.domain.filter.LoginFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/LoginFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="177" width="150" x="16594" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="137" language="java" name="br.com.byron.luderia.domain.mapper.ICityMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/ICityMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="91" x="8515" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="138" language="java" name="br.com.byron.luderia.domain.response.SaleResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/SaleResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="555" width="881" x="5970" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="139" language="java" name="br.com.byron.luderia.domain.model.SaleItem" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/model/SaleItem.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="159" width="146" x="7017" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="140" language="java" name="br.com.byron.luderia.utils.StrategyOrder" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/utils/StrategyOrder.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="159" width="234" x="10823" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="141" language="java" name="br.com.byron.luderia.domain.filter.StateFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/StateFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="82" x="17928" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="142" language="java" name="br.com.byron.luderia.repository.specification.UserSpecification" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/UserSpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="348" x="15726" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="143" language="java" name="br.com.byron.luderia.domain.enumerable.ProductType" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/ProductType.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="164" x="3451" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="144" language="java" name="br.com.byron.luderia.domain.request.LoginRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/LoginRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="195" width="159" x="16784" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="145" language="java" name="br.com.byron.luderia.domain.filter.UserFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/UserFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="80" x="16594" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <annotation id="146" language="java" name="br.com.byron.luderia.domain.validators.oldPassword.OldPassword" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/oldPassword/OldPassword.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="203" x="3655" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </annotation>  
+  <enumeration id="147" language="java" name="br.com.byron.luderia.domain.enumerable.GameStyle" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/enumerable/GameStyle.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="105" width="116" x="5413" y="4755"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="148" language="java" name="br.com.byron.luderia.repository.ISaleItemRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/ISaleItemRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="138" x="8515" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="149" language="java" name="br.com.byron.luderia.strategy.strategies.SaleChangeUpdateStrategy" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/strategy/strategies/SaleChangeUpdateStrategy.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="321" x="5499" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="150" language="java" name="br.com.byron.luderia.domain.request.SaleItemRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/SaleItemRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="177" width="173" x="1711" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="151" language="java" name="br.com.byron.luderia.domain.mapper.ISaleMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/ISaleMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="172" x="8646" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="152" language="java" name="br.com.byron.luderia.domain.filter.SaleItemFilter" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/filter/SaleItemFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="102" x="18050" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="153" language="java" name="br.com.byron.luderia.domain.request.SaleRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/SaleRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="357" width="546" x="1104" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="154" language="java" name="br.com.byron.luderia.domain.request.SaleChangeRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/SaleChangeRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="141" width="329" x="2310" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="155" language="java" name="br.com.byron.luderia.repository.specification.ExpansionSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/ExpansionSpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="69" width="375" x="12833" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="156" language="java" name="br.com.byron.luderia.domain.response.AccessoriesResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/AccessoriesResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="153" x="5109" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="157" language="java" name="br.com.byron.luderia.repository.ICityRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/ICityRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="109" x="12304" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="158" language="java" name="br.com.byron.luderia.domain.mapper.ISaleChangeMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/ISaleChangeMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="228" x="10103" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="159" language="java" name="br.com.byron.luderia.domain.mapper.IAccessoriesMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IAccessoriesMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="297" x="8858" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="160" language="java" name="br.com.byron.luderia.controller.GenericController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/GenericController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="141" width="620" x="11404" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="161" language="java" name="br.com.byron.luderia.service.ReportService" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/service/ReportService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="393" x="7198" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="162" language="java" name="br.com.byron.luderia.domain.mapper.IGameMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/IGameMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="229" x="10547" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="163" language="java" name="br.com.byron.luderia.repository.specification.SaleSpecification" 
+    project="Luderia" file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/SaleSpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="346" x="12020" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="164" language="java" name="br.com.byron.luderia.controller.CityController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/CityController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="341" x="5549" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="165" language="java" name="br.com.byron.luderia.repository.specification.SaleChangeSpecification" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/specification/SaleChangeSpecification.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="383" x="14092" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="166" language="java" name="br.com.byron.luderia.domain.response.CityResponse" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/CityResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="177" width="156" x="4052" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="167" language="java" name="br.com.byron.luderia.domain.validators.oldPassword.OldPasswordValidator" 
+    project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/validators/oldPassword/OldPasswordValidator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="87" width="350" x="8693" y="2178"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="168" language="java" name="br.com.byron.luderia.domain.response.SalesItemChart" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/response/SalesItemChart.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="177" width="307" x="4515" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="169" language="java" name="br.com.byron.luderia.domain.request.GenericRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/GenericRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="118" x="1713" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="170" language="java" name="br.com.byron.luderia.domain.request.IdRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/IdRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="123" width="106" x="1104" y="1331"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="171" language="java" name="br.com.byron.luderia.domain.request.UserPasswordRequest" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/request/UserPasswordRequest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="285" width="264" x="3898" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="172" language="java" name="br.com.byron.luderia.repository.ISaleChangeItemRepository" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/repository/ISaleChangeItemRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="33" width="181" x="10823" y="2719"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="173" language="java" name="br.com.byron.luderia.domain.mapper.ICreditCardMapper" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/domain/mapper/ICreditCardMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="51" width="171" x="11113" y="736"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="174" language="java" name="br.com.byron.luderia.controller.ProductController" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/controller/ProductController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="69" width="417" x="13528" y="465"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="175" language="java" name="br.com.byron.luderia.exception.StrategyException" project="Luderia" 
+    file="/Luderia/src/main/java/br/com/byron/luderia/exception/StrategyException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="141" width="273" x="4202" y="50"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="176">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <association id="177">    
+    <end type="SOURCE" refId="113" navigable="false">      
+      <attribute id="178" name="type"/>      
+      <multiplicity id="179" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="180">    
+    <bendpoint x="7932" y="1331"/>    
+    <bendpoint x="7380" y="736"/>    
+    <bendpoint x="7380" y="465"/>    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="181">    
+    <end type="SOURCE" refId="101" navigable="false">      
+      <attribute id="182" name="mapper"/>      
+      <multiplicity id="183" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="162" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="184">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="185" name="changeStatus"/>      
+      <multiplicity id="186" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="110" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="187">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <generalization id="188">    
+    <end type="SOURCE" refId="148"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <association id="189">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="190" name="facade"/>      
+      <multiplicity id="191" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="192">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="193" name="facade"/>      
+      <multiplicity id="194" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="195">    
+    <end type="SOURCE" refId="161" navigable="false">      
+      <attribute id="196" name="saleRepository"/>      
+      <multiplicity id="197" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="198">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="125"/>  
+  </generalization>  
+  <generalization id="199">    
+    <end type="SOURCE" refId="43"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <association id="200">    
+    <end type="SOURCE" refId="109" navigable="false">      
+      <attribute id="201" name="city"/>      
+      <multiplicity id="202" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="114" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="203">    
+    <end type="SOURCE" refId="123" navigable="false">      
+      <attribute id="204" name="imageRepository"/>      
+      <multiplicity id="205" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="75" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="206">    
+    <bendpoint x="7906" y="736"/>    
+    <bendpoint x="9882" y="1331"/>    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="207" name="coupon"/>      
+      <multiplicity id="208" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="84" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="209">    
+    <end type="SOURCE" refId="153" navigable="false">      
+      <attribute id="210" name="address"/>      
+      <multiplicity id="211" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="170" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="212">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="213" name="saleItemRepository"/>      
+      <multiplicity id="214" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="148" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="215">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="216">    
+    <end type="SOURCE" refId="174" navigable="false">      
+      <attribute id="217" name="facade"/>      
+      <multiplicity id="218" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="219">    
+    <end type="SOURCE" refId="157"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <generalization id="220">    
+    <end type="SOURCE" refId="124"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="221">    
+    <bendpoint x="3603" y="3206"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="222" name="languageDependence"/>      
+      <multiplicity id="223" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="94" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="224">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <association id="225">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="226" name="creditCardMapper"/>      
+      <multiplicity id="227" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="173" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="228">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <association id="229">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="230" name="facade"/>      
+      <multiplicity id="231" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="232">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="233" name="facade"/>      
+      <multiplicity id="234" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="235">    
+    <bendpoint x="7911" y="1331"/>    
+    <end type="SOURCE" refId="130" navigable="false">      
+      <attribute id="236" name="changeStatus"/>      
+      <multiplicity id="237" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="110" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="238">    
+    <end type="SOURCE" refId="82"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="239">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="240">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="241" name="specification"/>      
+      <multiplicity id="242" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="122" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="243">    
+    <bendpoint x="5038" y="3206"/>    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="244" name="languageDependence"/>      
+      <multiplicity id="245" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="94" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="246">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="247" name="addressMapper"/>      
+      <multiplicity id="248" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="118" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="249">    
+    <end type="SOURCE" refId="79" navigable="false">      
+      <attribute id="250" name="saleChangeItemRepository"/>      
+      <multiplicity id="251" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="172" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="252">    
+    <end type="SOURCE" refId="153" navigable="false">      
+      <attribute id="253" name="items"/>      
+      <multiplicity id="254" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="150" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="255">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="256" name="productRepository"/>      
+      <multiplicity id="257" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="88" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="258">    
+    <bendpoint x="1680" y="2719"/>    
+    <bendpoint x="1680" y="2178"/>    
+    <bendpoint x="1680" y="1331"/>    
+    <bendpoint x="1680" y="736"/>    
+    <end type="SOURCE" refId="113"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="259">    
+    <end type="SOURCE" refId="151"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="260">    
+    <end type="SOURCE" refId="168" navigable="false">      
+      <attribute id="261" name="expansions"/>      
+      <multiplicity id="262" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="48" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="263">    
+    <end type="SOURCE" refId="101"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <association id="264">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="265" name="addressSpecification"/>      
+      <multiplicity id="266" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="267">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="268" name="facade"/>      
+      <multiplicity id="269" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="270">    
+    <end type="SOURCE" refId="123"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <generalization id="271">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="97"/>  
+  </generalization>  
+  <association id="272">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="273" name="addresses"/>      
+      <multiplicity id="274" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="120" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="275">    
+    <end type="SOURCE" refId="121"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="276">    
+    <end type="SOURCE" refId="137"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="277">    
+    <bendpoint x="6944" y="1331"/>    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="278" name="product"/>      
+      <multiplicity id="279" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="125" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="280">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="281">    
+    <bendpoint x="3375" y="2178"/>    
+    <bendpoint x="3375" y="1331"/>    
+    <bendpoint x="3375" y="736"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <association id="282">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="283" name="mapper"/>      
+      <multiplicity id="284" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="285">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="286" name="type"/>      
+      <multiplicity id="287" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="85" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="288">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="289" name="mapper"/>      
+      <multiplicity id="290" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="124" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="291">    
+    <end type="SOURCE" refId="87" navigable="false">      
+      <attribute id="292" name="repository"/>      
+      <multiplicity id="293" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="78" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="294">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <generalization id="295">    
+    <end type="SOURCE" refId="144"/>    
+    <end type="TARGET" refId="145"/>  
+  </generalization>  
+  <generalization id="296">    
+    <bendpoint x="5918" y="736"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <association id="297">    
+    <bendpoint x="9522" y="1331"/>    
+    <end type="SOURCE" refId="107" navigable="false">      
+      <attribute id="298" name="coupon"/>      
+      <multiplicity id="299" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="84" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="300">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="301">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="302" name="specification"/>      
+      <multiplicity id="303" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="36" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="304">    
+    <end type="SOURCE" refId="104"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <association id="305">    
+    <end type="SOURCE" refId="130" navigable="false">      
+      <attribute id="306" name="items"/>      
+      <multiplicity id="307" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="308">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="309" name="coupons"/>      
+      <multiplicity id="310" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="84" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="311">    
+    <bendpoint x="1701" y="736"/>    
+    <end type="SOURCE" refId="150"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <association id="312">    
+    <end type="SOURCE" refId="168" navigable="false">      
+      <attribute id="313" name="games"/>      
+      <multiplicity id="314" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="48" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="315">    
+    <end type="SOURCE" refId="138" navigable="false">      
+      <attribute id="316" name="buyer"/>      
+      <multiplicity id="317" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="58" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="318">    
+    <end type="SOURCE" refId="164"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <generalization id="319">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <association id="320">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="321" name="mapper"/>      
+      <multiplicity id="322" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="323">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="324" name="userRepository"/>      
+      <multiplicity id="325" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="326">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <association id="327">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="328" name="creditCardSpecification"/>      
+      <multiplicity id="329" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="330">    
+    <end type="SOURCE" refId="172"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <association id="331">    
+    <end type="SOURCE" refId="87" navigable="false">      
+      <attribute id="332" name="strategyOrder"/>      
+      <multiplicity id="333" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="140" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="334">    
+    <end type="SOURCE" refId="136"/>    
+    <end type="TARGET" refId="145"/>  
+  </generalization>  
+  <association id="335">    
+    <bendpoint x="10072" y="736"/>    
+    <bendpoint x="10382" y="1331"/>    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="336" name="changeStatus"/>      
+      <multiplicity id="337" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="110" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="338">    
+    <bendpoint x="6140" y="1331"/>    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="339" name="changeReason"/>      
+      <multiplicity id="340" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="61" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="341">    
+    <end type="SOURCE" refId="129" navigable="false">      
+      <attribute id="342" name="userRepository"/>      
+      <multiplicity id="343" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="344">    
+    <end type="SOURCE" refId="96"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <generalization id="345">    
+    <bendpoint x="6946" y="2178"/>    
+    <bendpoint x="6923" y="1331"/>    
+    <bendpoint x="6923" y="736"/>    
+    <bendpoint x="6923" y="465"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="346">    
+    <end type="SOURCE" refId="132" navigable="false">      
+      <attribute id="347" name="languageDependence"/>      
+      <multiplicity id="348" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="94" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="349">    
+    <end type="SOURCE" refId="80"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <generalization id="350">    
+    <bendpoint x="6572" y="2719"/>    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="125"/>  
+  </generalization>  
+  <association id="351">    
+    <end type="SOURCE" refId="63" navigable="false">      
+      <attribute id="352" name="couponRepository"/>      
+      <multiplicity id="353" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="354">    
+    <end type="SOURCE" refId="154" navigable="false">      
+      <attribute id="355" name="items"/>      
+      <multiplicity id="356" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="357">    
+    <bendpoint x="8349" y="1331"/>    
+    <end type="SOURCE" refId="107" navigable="false">      
+      <attribute id="358" name="saleStatus"/>      
+      <multiplicity id="359" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="91" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="360">    
+    <bendpoint x="3354" y="736"/>    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <association id="361">    
+    <end type="SOURCE" refId="174" navigable="false">      
+      <attribute id="362" name="specification"/>      
+      <multiplicity id="363" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="127" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="364">    
+    <end type="SOURCE" refId="165"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <generalization id="365">    
+    <bendpoint x="10792" y="2719"/>    
+    <bendpoint x="10792" y="2178"/>    
+    <bendpoint x="10975" y="1331"/>    
+    <bendpoint x="11628" y="736"/>    
+    <bendpoint x="10403" y="465"/>    
+    <end type="SOURCE" refId="95"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="366">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="367" name="languageDependence"/>      
+      <multiplicity id="368" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="94" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="369">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="370" name="level"/>      
+      <multiplicity id="371" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="372">    
+    <bendpoint x="7401" y="736"/>    
+    <bendpoint x="7401" y="465"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <generalization id="373">    
+    <end type="SOURCE" refId="127"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <association id="374">    
+    <end type="SOURCE" refId="101" navigable="false">      
+      <attribute id="375" name="specification"/>      
+      <multiplicity id="376" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="96" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="377">    
+    <bendpoint x="5939" y="1331"/>    
+    <bendpoint x="5939" y="736"/>    
+    <end type="SOURCE" refId="60"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <generalization id="378">    
+    <bendpoint x="4688" y="1331"/>    
+    <bendpoint x="4688" y="736"/>    
+    <end type="SOURCE" refId="120"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <generalization id="379">    
+    <end type="SOURCE" refId="89"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <generalization id="380">    
+    <bendpoint x="7182" y="465"/>    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="381">    
+    <end type="SOURCE" refId="107" navigable="false">      
+      <attribute id="382" name="items"/>      
+      <multiplicity id="383" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="139" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="384">    
+    <bendpoint x="6965" y="1331"/>    
+    <end type="SOURCE" refId="138" navigable="false">      
+      <attribute id="385" name="saleStatus"/>      
+      <multiplicity id="386" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="91" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="387">    
+    <end type="SOURCE" refId="155"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <association id="388">    
+    <end type="SOURCE" refId="154" navigable="false">      
+      <attribute id="389" name="sale"/>      
+      <multiplicity id="390" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="170" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="391">    
+    <bendpoint x="5078" y="2719"/>    
+    <end type="SOURCE" refId="105"/>    
+    <end type="TARGET" refId="97"/>  
+  </generalization>  
+  <generalization id="392">    
+    <end type="SOURCE" refId="88"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <association id="393">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="394" name="mapper"/>      
+      <multiplicity id="395" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="159" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="396">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="397" name="changeReason"/>      
+      <multiplicity id="398" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="61" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="399">    
+    <bendpoint x="2669" y="736"/>    
+    <end type="SOURCE" refId="93"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="400">    
+    <bendpoint x="6986" y="1331"/>    
+    <bendpoint x="7338" y="736"/>    
+    <bendpoint x="7338" y="465"/>    
+    <end type="SOURCE" refId="125"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <generalization id="401">    
+    <end type="SOURCE" refId="145"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <association id="402">    
+    <end type="SOURCE" refId="153" navigable="false">      
+      <attribute id="403" name="user"/>      
+      <multiplicity id="404" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="170" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="405">    
+    <end type="SOURCE" refId="100"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <association id="406">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="407" name="mapper"/>      
+      <multiplicity id="408" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="151" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="409">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="410" name="accessoriesSpecification"/>      
+      <multiplicity id="411" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="412">    
+    <end type="SOURCE" refId="159"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <generalization id="413">    
+    <end type="SOURCE" refId="81"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="414">    
+    <bendpoint x="7422" y="465"/>    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="415">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="416" name="image"/>      
+      <multiplicity id="417" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="103" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="418">    
+    <bendpoint x="6881" y="736"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <generalization id="419">    
+    <end type="SOURCE" refId="162"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="420">    
+    <bendpoint x="6118" y="3206"/>    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="421" name="level"/>      
+      <multiplicity id="422" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="423">    
+    <end type="SOURCE" refId="83"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <association id="424">    
+    <bendpoint x="11668" y="1331"/>    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="425" name="repository"/>      
+      <multiplicity id="426" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="78" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="427">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="428" name="creditCards"/>      
+      <multiplicity id="429" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="49" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="430">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <generalization id="431">    
+    <end type="SOURCE" refId="115"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="432">    
+    <end type="SOURCE" refId="156"/>    
+    <end type="TARGET" refId="97"/>  
+  </generalization>  
+  <association id="433">    
+    <end type="SOURCE" refId="167" navigable="false">      
+      <attribute id="434" name="userRepository"/>      
+      <multiplicity id="435" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="436">    
+    <bendpoint x="7359" y="736"/>    
+    <bendpoint x="7359" y="465"/>    
+    <end type="SOURCE" refId="139"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="437">    
+    <bendpoint x="9501" y="1331"/>    
+    <end type="SOURCE" refId="107" navigable="false">      
+      <attribute id="438" name="address"/>      
+      <multiplicity id="439" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="109" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="440">    
+    <end type="SOURCE" refId="120" navigable="false">      
+      <attribute id="441" name="state"/>      
+      <multiplicity id="442" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="443">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="444" name="facade"/>      
+      <multiplicity id="445" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="446">    
+    <end type="SOURCE" refId="79"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <association id="447">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="448" name="product"/>      
+      <multiplicity id="449" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="97" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="450">    
+    <bendpoint x="10566" y="2178"/>    
+    <bendpoint x="10361" y="1331"/>    
+    <bendpoint x="10361" y="736"/>    
+    <bendpoint x="10361" y="465"/>    
+    <end type="SOURCE" refId="114"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="451">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="452" name="coupons"/>      
+      <multiplicity id="453" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="70" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="454">    
+    <end type="SOURCE" refId="106" navigable="false">      
+      <attribute id="455" name="saleStatus"/>      
+      <multiplicity id="456" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="91" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="457">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="458" name="userType"/>      
+      <multiplicity id="459" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="460">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="461" name="creditCardFacade"/>      
+      <multiplicity id="462" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="463">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="464" name="userRepository"/>      
+      <multiplicity id="465" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="466">    
+    <end type="SOURCE" refId="130"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <association id="467">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="468" name="languageDependence"/>      
+      <multiplicity id="469" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="94" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="470">    
+    <end type="SOURCE" refId="174"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <realization id="471">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <association id="472">    
+    <end type="SOURCE" refId="113" navigable="false">      
+      <attribute id="473" name="style"/>      
+      <multiplicity id="474" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="147" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="475">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <generalization id="476">    
+    <bendpoint x="3396" y="2178"/>    
+    <bendpoint x="3396" y="1331"/>    
+    <bendpoint x="3396" y="736"/>    
+    <end type="SOURCE" refId="166"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <generalization id="477">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <generalization id="478">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="479">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="125"/>  
+  </generalization>  
+  <association id="480">    
+    <end type="SOURCE" refId="161" navigable="false">      
+      <attribute id="481" name="saleChangeRepository"/>      
+      <multiplicity id="482" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="83" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="483">    
+    <end type="SOURCE" refId="168" navigable="false">      
+      <attribute id="484" name="accessories"/>      
+      <multiplicity id="485" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="48" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="486">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <association id="487">    
+    <end type="SOURCE" refId="125" navigable="false">      
+      <attribute id="488" name="image"/>      
+      <multiplicity id="489" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="490">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="491" name="baseGame"/>      
+      <multiplicity id="492" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="493">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="494" name="userType"/>      
+      <multiplicity id="495" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="496">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="497" name="baseGame"/>      
+      <multiplicity id="498" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="105" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="499">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="500">    
+    <end type="SOURCE" refId="122"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <generalization id="501">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <association id="502">    
+    <end type="SOURCE" refId="139" navigable="false">      
+      <attribute id="503" name="product"/>      
+      <multiplicity id="504" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="125" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="505">    
+    <end type="SOURCE" refId="163"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <generalization id="506">    
+    <bendpoint x="387" y="2719"/>    
+    <bendpoint x="387" y="2178"/>    
+    <bendpoint x="387" y="1331"/>    
+    <bendpoint x="387" y="736"/>    
+    <end type="SOURCE" refId="132"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="507">    
+    <end type="SOURCE" refId="102"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="508">    
+    <end type="SOURCE" refId="138" navigable="false">      
+      <attribute id="509" name="items"/>      
+      <multiplicity id="510" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="108" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="511">    
+    <bendpoint x="9480" y="1331"/>    
+    <end type="SOURCE" refId="107" navigable="false">      
+      <attribute id="512" name="creditCard"/>      
+      <multiplicity id="513" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="72" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="514">    
+    <end type="SOURCE" refId="113" navigable="false">      
+      <attribute id="515" name="level"/>      
+      <multiplicity id="516" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="517">    
+    <end type="SOURCE" refId="174" navigable="false">      
+      <attribute id="518" name="mapper"/>      
+      <multiplicity id="519" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="520">    
+    <end type="SOURCE" refId="153" navigable="false">      
+      <attribute id="521" name="creditCard"/>      
+      <multiplicity id="522" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="170" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="523">    
+    <end type="SOURCE" refId="79" navigable="false">      
+      <attribute id="524" name="saleRepository"/>      
+      <multiplicity id="525" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="526">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="527">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <association id="528">    
+    <end type="SOURCE" refId="76" navigable="false">      
+      <attribute id="529" name="mapper"/>      
+      <multiplicity id="530" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="158" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="531">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="532" name="specification"/>      
+      <multiplicity id="533" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="163" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="534">    
+    <bendpoint x="6902" y="1331"/>    
+    <bendpoint x="6902" y="736"/>    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <generalization id="535">    
+    <end type="SOURCE" refId="152"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="536">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <association id="537">    
+    <end type="SOURCE" refId="160" navigable="false">      
+      <attribute id="538" name="specification"/>      
+      <multiplicity id="539" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="128" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="540">    
+    <bendpoint x="1073" y="736"/>    
+    <end type="SOURCE" refId="170"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <association id="541">    
+    <end type="SOURCE" refId="107" navigable="false">      
+      <attribute id="542" name="buyer"/>      
+      <multiplicity id="543" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="544">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="545" name="couponRepository"/>      
+      <multiplicity id="546" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="547">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <association id="548">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="549" name="strategy"/>      
+      <multiplicity id="550" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="87" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="551">    
+    <end type="SOURCE" refId="76" navigable="false">      
+      <attribute id="552" name="specification"/>      
+      <multiplicity id="553" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="165" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="554">    
+    <end type="SOURCE" refId="120" navigable="false">      
+      <attribute id="555" name="city"/>      
+      <multiplicity id="556" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="166" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="557">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <association id="558">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="559" name="level"/>      
+      <multiplicity id="560" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="561">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="562" name="sale"/>      
+      <multiplicity id="563" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="107" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="564">    
+    <bendpoint x="4811" y="1331"/>    
+    <bendpoint x="4811" y="736"/>    
+    <end type="SOURCE" refId="97"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <association id="565">    
+    <bendpoint x="4832" y="1331"/>    
+    <end type="SOURCE" refId="138" navigable="false">      
+      <attribute id="566" name="address"/>      
+      <multiplicity id="567" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="120" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="568">    
+    <end type="SOURCE" refId="142"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <association id="569">    
+    <end type="SOURCE" refId="113" navigable="false">      
+      <attribute id="570" name="languageDependence"/>      
+      <multiplicity id="571" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="94" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="572">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <generalization id="573">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="50"/>  
+  </generalization>  
+  <association id="574">    
+    <bendpoint x="6119" y="1331"/>    
+    <end type="SOURCE" refId="138" navigable="false">      
+      <attribute id="575" name="creditCard"/>      
+      <multiplicity id="576" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="577">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <generalization id="578">    
+    <bendpoint x="9861" y="1331"/>    
+    <bendpoint x="10051" y="736"/>    
+    <bendpoint x="10051" y="465"/>    
+    <end type="SOURCE" refId="109"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="579">    
+    <end type="SOURCE" refId="130" navigable="false">      
+      <attribute id="580" name="sale"/>      
+      <multiplicity id="581" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="170" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="582">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="583" name="changeReason"/>      
+      <multiplicity id="584" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="61" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="585">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="586" name="items"/>      
+      <multiplicity id="587" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="588">    
+    <end type="SOURCE" refId="153" navigable="false">      
+      <attribute id="589" name="coupon"/>      
+      <multiplicity id="590" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="170" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="591">    
+    <end type="SOURCE" refId="153"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="592">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="593">    
+    <end type="SOURCE" refId="154"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="594">    
+    <end type="SOURCE" refId="173"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <generalization id="595">    
+    <end type="SOURCE" refId="98"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <generalization id="596">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="128"/>  
+  </generalization>  
+  <association id="597">    
+    <end type="SOURCE" refId="82" navigable="false">      
+      <attribute id="598" name="saleStatus"/>      
+      <multiplicity id="599" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="91" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="600">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <association id="601">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="602" name="userRepository"/>      
+      <multiplicity id="603" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="604">    
+    <end type="SOURCE" refId="133"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="605">    
+    <bendpoint x="10954" y="1331"/>    
+    <bendpoint x="11607" y="736"/>    
+    <bendpoint x="10382" y="465"/>    
+    <end type="SOURCE" refId="84"/>    
+    <end type="TARGET" refId="90"/>  
+  </generalization>  
+  <association id="606">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="607" name="style"/>      
+      <multiplicity id="608" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="147" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="609">    
+    <bendpoint x="1722" y="736"/>    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <association id="610">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="611" name="style"/>      
+      <multiplicity id="612" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="147" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="613">    
+    <bendpoint x="14396" y="465"/>    
+    <end type="SOURCE" refId="160" navigable="false">      
+      <attribute id="614" name="facade"/>      
+      <multiplicity id="615" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="616">    
+    <end type="SOURCE" refId="141"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="617">    
+    <end type="SOURCE" refId="112"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <generalization id="618">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <generalization id="619">    
+    <bendpoint x="5565" y="736"/>    
+    <end type="SOURCE" refId="108"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <generalization id="620">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <realization id="621">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <association id="622">    
+    <end type="SOURCE" refId="114" navigable="false">      
+      <attribute id="623" name="state"/>      
+      <multiplicity id="624" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="95" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="625">    
+    <end type="SOURCE" refId="158"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="626">    
+    <end type="SOURCE" refId="160" navigable="false">      
+      <attribute id="627" name="mapper"/>      
+      <multiplicity id="628" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="629">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <association id="630">    
+    <end type="SOURCE" refId="128" navigable="false">      
+      <attribute id="631" name="filter"/>      
+      <multiplicity id="632" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="633">    
+    <end type="SOURCE" refId="108" navigable="false">      
+      <attribute id="634" name="product"/>      
+      <multiplicity id="635" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="97" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="636">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="637" name="type"/>      
+      <multiplicity id="638" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="639">    
+    <end type="SOURCE" refId="101" navigable="false">      
+      <attribute id="640" name="facade"/>      
+      <multiplicity id="641" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="642">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <association id="643">    
+    <end type="SOURCE" refId="131" navigable="false">      
+      <attribute id="644" name="freightService"/>      
+      <multiplicity id="645" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="646">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="647" name="addressRepository"/>      
+      <multiplicity id="648" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="112" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="649">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <generalization id="650">    
+    <end type="SOURCE" refId="118"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="651">    
+    <end type="SOURCE" refId="132" navigable="false">      
+      <attribute id="652" name="level"/>      
+      <multiplicity id="653" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="654">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <generalization id="655">    
+    <end type="SOURCE" refId="86"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <association id="656">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="657" name="creditCards"/>      
+      <multiplicity id="658" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="659">    
+    <end type="SOURCE" refId="66"/>    
+    <end type="TARGET" refId="78"/>  
+  </generalization>  
+  <association id="660">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="661" name="addresses"/>      
+      <multiplicity id="662" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="93" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="663">    
+    <end type="SOURCE" refId="117" navigable="false">      
+      <attribute id="664" name="userRepository"/>      
+      <multiplicity id="665" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="666">    
+    <end type="SOURCE" refId="116"/>    
+    <end type="TARGET" refId="169"/>  
+  </generalization>  
+  <association id="667">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="668" name="saleRepository"/>      
+      <multiplicity id="669" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="670">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="671" name="freightService"/>      
+      <multiplicity id="672" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="99" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="673">    
+    <bendpoint x="11087" y="2178"/>    
+    <bendpoint x="8484" y="2719"/>    
+    <bendpoint x="7600" y="3206"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="674" name="levelList"/>      
+      <multiplicity id="675" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="676">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="677" name="specification"/>      
+      <multiplicity id="678" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="155" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="679">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="680" name="creditCards"/>      
+      <multiplicity id="681" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="72" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="682">    
+    <bendpoint x="7642" y="2178"/>    
+    <end type="SOURCE" refId="87" navigable="false">      
+      <attribute id="683" name="strategies"/>      
+      <multiplicity id="684" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="37" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="685">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="686" name="addresses"/>      
+      <multiplicity id="687" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="109" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="688">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="689" name="mapper"/>      
+      <multiplicity id="690" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="86" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="691">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <generalization id="692">    
+    <end type="SOURCE" refId="138"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <generalization id="693">    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="69"/>  
+  </generalization>  
+  <generalization id="694">    
+    <bendpoint x="7621" y="3206"/>    
+    <bendpoint x="7621" y="2719"/>    
+    <bendpoint x="7621" y="2178"/>    
+    <bendpoint x="7672" y="1331"/>    
+    <bendpoint x="7317" y="736"/>    
+    <end type="SOURCE" refId="103"/>    
+    <end type="TARGET" refId="62"/>  
+  </generalization>  
+  <association id="695">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="696" name="specification"/>      
+      <multiplicity id="697" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="142" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="698">    
+    <end type="SOURCE" refId="76" navigable="false">      
+      <attribute id="699" name="facade"/>      
+      <multiplicity id="700" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="701">    
+    <end type="SOURCE" refId="63" navigable="false">      
+      <attribute id="702" name="productRepository"/>      
+      <multiplicity id="703" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="88" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="704">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="705" name="reportService"/>      
+      <multiplicity id="706" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="161" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="707">    
+    <bendpoint x="6273" y="1331"/>    
+    <end type="SOURCE" refId="138" navigable="false">      
+      <attribute id="708" name="coupon"/>      
+      <multiplicity id="709" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="70" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="710">    
+    <end type="SOURCE" refId="76"/>    
+    <end type="TARGET" refId="160"/>  
+  </generalization>  
+  <association id="711">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="712" name="addressFacade"/>      
+      <multiplicity id="713" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="714">    
+    <end type="SOURCE" refId="105" navigable="false">      
+      <attribute id="715" name="type"/>      
+      <multiplicity id="716" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="717">    
+    <bendpoint x="5017" y="3206"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="718" name="level"/>      
+      <multiplicity id="719" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="false" protected="true" private="true" static="true"/>    
+    <operations public="true" package="false" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

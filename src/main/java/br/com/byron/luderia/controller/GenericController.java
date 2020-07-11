@@ -4,6 +4,7 @@ import br.com.byron.luderia.domain.filter.GenericFilter;
 import br.com.byron.luderia.domain.mapper.IGenericMapper;
 import br.com.byron.luderia.domain.request.GenericRequest;
 import br.com.byron.luderia.domain.response.GenericResponse;
+import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.model.GenericEntity;
 import br.com.byron.luderia.repository.specification.GenericSpecification;
@@ -37,7 +38,7 @@ public class GenericController<Entity extends GenericEntity, Filter extends Gene
 	@PostMapping
 	@ApiOperation(value = "Save", produces = "application/json", consumes = "application/json")
 	@ApiResponse(code = 201, message = "Created")
-	public ResponseEntity<Response> save(@Valid @RequestBody Request entidadeRequest) {
+	public ResponseEntity<Response> save(@Valid @RequestBody Request entidadeRequest) throws NotFoundEntityException {
 		Entity e = facade.save(mapper.toEntity(entidadeRequest));
 		return ResponseEntity.status(HttpStatus.CREATED).header(HttpHeaders.LOCATION, e.getId().toString())
 				.body(mapper.toResponse(e));
@@ -63,7 +64,7 @@ public class GenericController<Entity extends GenericEntity, Filter extends Gene
 	@ApiOperation(value = "Update", produces = "application/json", consumes = "application/json")
 	@ApiResponses(value = { @ApiResponse(code = 204, message = "Success"),
 			@ApiResponse(code = 404, message = "Not found") })
-	public ResponseEntity<Void> update(@Valid @RequestBody Request request, @PathVariable("id") Long id) {
+	public ResponseEntity<Void> update(@Valid @RequestBody Request request, @PathVariable("id") Long id) throws NotFoundEntityException {
 		facade.update(mapper.toUpdateEntity(request, id));
 		return ResponseEntity.noContent().build();
 	}
@@ -72,7 +73,7 @@ public class GenericController<Entity extends GenericEntity, Filter extends Gene
 	@ApiOperation(value = "Delete", produces = "application/json", consumes = "application/json")
 	@ApiResponses(value = { @ApiResponse(code = 204, message = "Success"),
 			@ApiResponse(code = 404, message = "Not found") })
-	public ResponseEntity<Void> delete(@RequestParam Long id) {
+	public ResponseEntity<Void> delete(@RequestParam Long id) throws NotFoundEntityException {
 		facade.delete(mapper.toEntity(id));
 		return ResponseEntity.noContent().build();
 	}

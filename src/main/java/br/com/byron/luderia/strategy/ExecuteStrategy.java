@@ -21,7 +21,7 @@ public class ExecuteStrategy<Entity extends GenericEntity> {
 
     private final StrategyOrder strategyOrder = new StrategyOrder();
 
-    public void save(Entity entity) {
+    public void save(Entity entity) throws NotFoundEntityException {
         List<String> strategyList = strategyOrder.getSaveOrder().get(entity.getClass().getSimpleName());
         if (strategyList != null) {
             for (String strategy : strategyList) {
@@ -30,7 +30,7 @@ public class ExecuteStrategy<Entity extends GenericEntity> {
         }
     }
 
-    public void update(Entity entity) {
+    public void update(Entity entity) throws NotFoundEntityException {
         List<String> strategyList = strategyOrder.getUpdateOrder().get(entity.getClass().getSimpleName());
         if (strategyList != null) {
             for (String strategy : strategyList) {
@@ -39,7 +39,7 @@ public class ExecuteStrategy<Entity extends GenericEntity> {
         }
     }
 
-    public void delete(Entity entity) {
+    public void delete(Entity entity) throws NotFoundEntityException {
         repository.get(StrategyUtils.formatRepositoryName(entity.getClass())).findById(entity.getId()).orElseThrow(() -> new NotFoundEntityException("Entity nor found"));
         entity.setActive(false);
     }

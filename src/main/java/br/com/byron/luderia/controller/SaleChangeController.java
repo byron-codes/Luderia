@@ -5,6 +5,7 @@ import br.com.byron.luderia.domain.mapper.ISaleChangeMapper;
 import br.com.byron.luderia.domain.request.SaleChangeRequest;
 import br.com.byron.luderia.domain.response.SaleChangeResponse;
 import br.com.byron.luderia.domain.response.SaleResponse;
+import br.com.byron.luderia.exception.NotFoundEntityException;
 import br.com.byron.luderia.facade.Facade;
 import br.com.byron.luderia.domain.enumerable.ChangeStatus;
 import br.com.byron.luderia.domain.model.SaleChange;
@@ -44,7 +45,7 @@ public class SaleChangeController extends GenericController<SaleChange, SaleChan
     }
 
     @PutMapping("/authorized/{id}")
-    public ResponseEntity<Void> updateAuthorized(@PathVariable("id") Long id) {
+    public ResponseEntity<Void> updateAuthorized(@PathVariable("id") Long id) throws NotFoundEntityException {
         specification.setFilter(mapper.toFilter(id));
         SaleChange saleChange = facade.find(specification).get(0);
         saleChange.setChangeStatus(ChangeStatus.SHIPMENT);
@@ -53,7 +54,7 @@ public class SaleChangeController extends GenericController<SaleChange, SaleChan
     }
 
     @PutMapping("/receive/{id}")
-    public ResponseEntity<Void> updateReceive(@PathVariable("id") Long id) {
+    public ResponseEntity<Void> updateReceive(@PathVariable("id") Long id) throws NotFoundEntityException {
         specification.setFilter(mapper.toFilter(id));
         SaleChange saleChange = facade.find(specification).get(0);
         saleChange.setChangeStatus(ChangeStatus.FINISHED);
